@@ -1,5 +1,5 @@
 // lib
-import localFont from '@next/font/local'
+import localFont from "next/font/local"
 import { Figtree, Mulish } from "next/font/google";
 
 export const muli = localFont({
