@@ -13,10 +13,10 @@ import {
 } from "swiper/modules";
 
 // local
-import { Button, Card } from "@/components/atoms";
-import { FAQData, cn, muli, mulish } from "@/lib";
+import { Button, Card, Icon } from "@/components/atoms";
+import { FAQData, TimelineData, cn, muli, mulish } from "@/lib";
 import { Navbar } from "@/components/templates";
-import { FAQCard } from "@/components/molecules";
+import { FAQCard, TimelineCard } from "@/components/molecules";
 // Image
 import HumanStandingImage from "@/images/human-standing.png";
 import CareerCatalystsImage from "@/images/career catalyst.png";
@@ -33,6 +33,7 @@ import CompanyImage from "@/images/company.png";
 import SponsorsImage from "@/images/sponsors.png";
 import InstagramImage from "@/images/instagram.png";
 import LinkedinImage from "@/images/linkedin.png";
+import TimelineDownSVG from "@/svg/timeline-down.svg";
 
 export default function Home() {
   return (
@@ -293,7 +294,7 @@ export default function Home() {
       {/* END: Section 6 */}
       {/* BEGIN: Section 7 */}
       <section className="relative -top-16 z-10">
-        <Card className="pb-12">
+        <Card className="border-none bg-[#F8FAFC] my-0">
           <h2 className="text-primary font-bold text-center uppercase leading-9 px-4 mb-4">
             Engaging activity with the coaches
           </h2>
@@ -336,12 +337,40 @@ export default function Home() {
       </section>
       {/* END: Section 7 */}
       {/* BEGIN: Section 8 */}
-      <section className="px-4 mt-14">
+      <section className="px-4">
         <p
-          className={cn([muli.className, "text-primary font-bold text-center"])}
+          className={cn([
+            muli.className,
+            "text-primary font-bold text-center mb-6",
+          ])}
         >
           TIMELINE
         </p>
+        <div className="grid gap-y-2">
+          {TimelineData.map((item, index) => {
+            const lastIndex = TimelineData.length - 1;
+
+            return (
+              <div key={index}>
+                <TimelineCard
+                  date={item.date}
+                  isKickOff={item.isKickOff}
+                  title={item.title}
+                  isOrange={item.isOrange}
+                  item={item.item}
+                  key={index}
+                />
+                <div
+                  className={cn([
+                    index === lastIndex ? "hidden" : "flex justify-center mt-2",
+                  ])}
+                >
+                  <TimelineDownSVG />
+                </div>
+              </div>
+            );
+          })}
+        </div>
       </section>
       {/* END: Section 8 */}
 
