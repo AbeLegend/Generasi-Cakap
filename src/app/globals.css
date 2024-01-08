@@ -3,25 +3,10 @@
 @tailwind utilities;
 
 @layer base {
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    font-family: "Figtree", sans-serif;
-  }
-
   h1 {
     @apply text-gc-heading leading-gc-heading;
   }
   h2 {
     @apply text-gc-sub-heading leading-gc-sub-heading;
-  }
-
-  div,
-  p,
-  span {
-    font-family: "Muli", sans-serif;
   }
 }

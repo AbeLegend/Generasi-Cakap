@@ -81,6 +81,7 @@ const config: Config = {
           800: "rgb(var(--color-neutral-800) / <alpha-value>)",
           900: "rgb(var(--color-neutral-900) / <alpha-value>)",
           1000: "rgb(var(--color-neutral-1000) / <alpha-value>)",
+          'background': "rgb(var(--color-background) / <alpha-value>)",
         },
         // END PRIMARY
 
@@ -141,6 +142,7 @@ const config: Config = {
           "--color-neutral-800": "97 97 97",
           "--color-neutral-900": "65 60 60",
           "--color-neutral-1000": "18 25 38",
+          "--color-background": "248 250 252",
 
           // Info
           "--color-info-primary": "57 127 232",
@@ -172,6 +174,7 @@ const config: Config = {
         },
       });
     }),
+
   ],
 }
 export default config

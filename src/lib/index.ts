@@ -1,3 +1,5 @@
+import { cn } from "./util";
 import { figtree, muli, mulish } from "./font";
+import { FAQData } from "./data";
 
-export { figtree, muli, mulish }
+export { cn, figtree, muli, mulish, FAQData }

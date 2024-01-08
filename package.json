@@ -9,11 +9,18 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@svgr/webpack": "^8.1.0",
+    "clsx": "^2.1.0",
+    "feather-icons": "^4.29.1",
+    "heroicons": "^2.1.1",
     "next": "14.0.4",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "swiper": "^11.0.5",
+    "tailwind-merge": "^2.2.0"
   },
   "devDependencies": {
+    "@types/feather-icons": "^4.29.4",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
