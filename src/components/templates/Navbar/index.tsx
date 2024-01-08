@@ -2,13 +2,19 @@
 import { FC } from "react";
 import Image from "next/image";
 // local
+import { cn } from "@/lib";
 // image
 import LogoGenerasiCakapImage from "@/images/logo generasi cakap.png";
 import InstagramImage from "@/images/instagram.png";
 
 const Navbar: FC = () => {
   return (
-    <nav className="bg-neutral-100 flex justify-between py-2 px-4 fixed z-50 w-full">
+    <nav
+      className={cn([
+        "bg-neutral-100 flex justify-between py-2 px-4 fixed z-50 w-full",
+        "desktop:px-60",
+      ])}
+    >
       <div className="relative w-[106px] h-[33px]">
         <Image alt="logo" src={LogoGenerasiCakapImage} layout="fill" />
       </div>

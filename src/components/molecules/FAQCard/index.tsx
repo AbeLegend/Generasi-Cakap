@@ -10,12 +10,15 @@ import { Icon } from "@/components/atoms";
 interface FAQCardProps {
   question: string;
   answer: string;
+  className?: string;
 }
 
-const FAQCard: FC<FAQCardProps> = ({ question, answer }) => {
+const FAQCard: FC<FAQCardProps> = ({ question, answer, className }) => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
   return (
-    <div className="relative rounded-lg border border-[#99CEF0]">
+    <div
+      className={cn(["relative rounded-lg border border-[#99CEF0]", className])}
+    >
       {/* BEGIN: Question */}
       <div
         className={cn([

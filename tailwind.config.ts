@@ -115,6 +115,10 @@ const config: Config = {
           pressed: "rgb(var(--color-danger-pressed) / <alpha-value>)",
         },
       },
+      screens: {
+        'tab': "744px",
+        'desktop': "1280px"
+      }
     },
   },
   plugins: [
