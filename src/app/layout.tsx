@@ -1,10 +1,9 @@
 // lib
 import type { Metadata } from "next";
-import Head from "next/head";
+import Script from "next/script";
 // local
 import "./globals.css";
 import { figtree } from "@/lib";
-import Script from "next/script";
 
 export const metadata: Metadata = {
   title: "Generasi Cakap",
@@ -18,8 +17,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <Head>
-        {/* Google tag (gtag.js) */}
+      <head>
         <Script
           src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
         />
@@ -27,9 +25,10 @@ export default function RootLayout({
           {`window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
+          
           gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}');`}
         </Script>
-      </Head>
+      </head>
       <body className={figtree.className}>{children}</body>
     </html>
   );
