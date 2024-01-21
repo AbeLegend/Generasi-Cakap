@@ -38,6 +38,14 @@ import TimelineDownSVG from "@/svg/timeline-down.svg";
 import CareerCatalystsLargeImage from "@/images/career catalyst-large.png";
 import CareerPathImage from "@/images/career-path.png";
 import SponsorsLargeImage from "@/images/sponsors-large.png";
+// SVG
+import CoperSVG from "@/svg/coper.svg";
+import MapPinSVG from "@/svg/map-pin.svg";
+import MapSVG from "@/svg/map.svg";
+import PersonSearchSVG from "@/svg/person-search.svg";
+import QueryStatsSVG from "@/svg/query-stats.svg";
+import SmileSVG from "@/svg/smile.svg";
+import UserGroupSVG from "@/svg/user-group.svg";
 
 export default function Home() {
   return (
@@ -47,6 +55,7 @@ export default function Home() {
       <section
         className={cn([
           "bg-primary w-full pt-[55px] px-4 relative z-10",
+          "tab:grid tab:grid-cols-4 tab:items-center tab:justify-center tab:px-10",
           "desktop:grid desktop:grid-cols-8 desktop:px-60 desktop:pt-28 desktop:overflow-hidden",
         ])}
       >
@@ -54,6 +63,7 @@ export default function Home() {
         <div
           className={cn([
             "relative w-[265px] h-[257px] mx-auto mb-[26px]",
+            "tab:order-2 tab:col-span-2",
             "desktop:w-[476px] desktop:h-[512px] desktop:m-0 desktop:col-span-3 desktop:col-start-6 desktop:order-2",
           ])}
         >
@@ -61,7 +71,12 @@ export default function Home() {
         </div>
         {/* END: Image */}
 
-        <div className="desktop:col-span-4 desktop:order-1 desktop:self-center desktop:pr-13 desktop:mb-28">
+        <div
+          className={cn([
+            "tab:col-span-2",
+            "desktop:col-span-4 desktop:order-1 desktop:self-center desktop:pr-13 desktop:mb-28",
+          ])}
+        >
           <h1
             className={cn([
               "text-neutral-100 uppercase font-bold mb-2",
@@ -122,11 +137,18 @@ export default function Home() {
       </section>
       {/* END: Section 1 */}
       {/* BEGIN: Section 2 */}
-      <section className={cn(["pt-[58px] bg-neutral-200", "pt-[128px]"])}>
+      <section
+        className={cn([
+          "pt-[58px] bg-neutral-200",
+          "tab:pt-16",
+          "desktop:pt-[128px]",
+        ])}
+      >
         {/*  */}
         <h2
           className={cn([
             "text-primary font-bold text-center mb-4",
+            "tab:text-[25px]",
             "desktop:text-[52px]",
           ])}
         >
@@ -139,6 +161,7 @@ export default function Home() {
             muli.className,
             "text-sm text-neutral-900 max-w-[290px] text-center mx-auto",
             "mb-[25px]",
+            "tab:max-w-[400px] tab:text-lg",
             "desktop:text-lg desktop:max-w-[524px]",
           ])}
         >
@@ -148,7 +171,13 @@ export default function Home() {
         {/*  */}
         {/* BEGIN: Career Catalyst */}
         <div className="px-4">
-          <div className={cn(["relative h-[80px]", "desktop:hidden"])}>
+          <div
+            className={cn([
+              "relative h-[80px]",
+              "tab:w-[400px] tab:h-[100px] tab:mx-auto",
+              "desktop:hidden",
+            ])}
+          >
             <Image
               alt="Career Catalyst"
               src={CareerCatalystsImage}
@@ -173,6 +202,7 @@ export default function Home() {
           className={cn([
             "text-xs text-neutral-600 text-center mt-4 mb-2",
             muli.className,
+            "tab:mt-10 tab:text-lg",
             "desktop:text-lg",
           ])}
         >
@@ -183,6 +213,7 @@ export default function Home() {
           <div
             className={cn([
               "relative w-[108px] h-9",
+              "tab:w-[158px] tab:h-[52px]",
               "desktop:w-[158px] desktop:h-[52px]",
             ])}
           >
@@ -196,6 +227,7 @@ export default function Home() {
             className={cn([
               muli.className,
               "text-gc-body-1 font-semibold text-neutral-800",
+              "tab:text-[29px]",
               "desktop:text-[29px]",
             ])}
           >
@@ -204,19 +236,36 @@ export default function Home() {
           <div
             className={cn([
               "relative w-[128px] h-9",
+              "tab:w-[187px] tab:h-[36px]",
               "desktop:w-[187px] desktop:h-[36px]",
             ])}
           >
             <Image alt="Coaching" src={CareerCoachingImage} layout="fill" />
           </div>
         </div>
-        <hr className="mx-16 bg-neutral-500 border-none h-[1px] mb-6 desktop:hidden" />
+        <hr
+          className={cn([
+            "mx-16 bg-neutral-500 border-none h-[1px] mb-6",
+            "tab:hidden",
+            "desktop:hidden",
+          ])}
+        />
         {/*  */}
       </section>
       {/* END: Section 2 */}
       {/* BEGIN: Section 3 */}
-      <section className="desktop:px-[240px] desktop:grid desktop:grid-cols-8 desktop:mt-12 desktop:mb-64">
-        <Card className="desktop:col-span-6 desktop:col-start-2 desktop:py-8 desktop:px-6 desktop:mx-10">
+      <section
+        className={cn([
+          "tab:grid tab:grid-cols-8 tab:mt-12 tab:mb-32",
+          "desktop:px-[240px] desktop:grid desktop:grid-cols-8 desktop:mt-12 desktop:mb-64",
+        ])}
+      >
+        <Card
+          className={cn([
+            "tab:col-span-6 tab:col-start-2 tab:py-8 tab:px-6 tab:mx-10",
+            "desktop:col-span-6 desktop:col-start-2 desktop:py-8 desktop:px-6 desktop:mx-10",
+          ])}
+        >
           <p
             className={cn([
               muli.className,
@@ -325,41 +374,151 @@ export default function Home() {
             "desktop:px-[240px] desktop:mt-8",
           ])}
         >
-          {Array(4)
-            .fill(null)
-            .map((item, index) => {
-              return (
-                <Card
-                  className={cn(["col-span-6 m-0", "desktop:col-span-3"])}
-                  key={index}
-                >
-                  <div
-                    className={cn([
-                      "bg-primary rounded-full w-20 h-9 mb-4 mt-[42px] mx-auto",
-                      "desktop:mt-4",
-                    ])}
-                  />
-                  <p
-                    className={cn([
-                      muli.className,
-                      "text-primary font-bold text-center text-sm",
-                      "desktop:text-lg",
-                    ])}
-                  >
-                    Skills Assessment
-                  </p>
-                  <p
-                    className={cn([
-                      muli.className,
-                      "text-neutral-600 text-center text-xs leading-gc-body-4",
-                      "desktop:text-base",
-                    ])}
-                  >
-                    Rapid career growth tailored to your goals
-                  </p>
-                </Card>
-              );
-            })}
+          <Card
+            className={cn([
+              "col-span-6 m-0",
+              "tab:col-span-6",
+              "desktop:col-span-3",
+            ])}
+          >
+            <div
+              className={cn([
+                // "bg-primary rounded-full w-20 h-9 mb-4 mt-[42px] mx-auto",
+                "bg-[#CAE7D5] rounded-[10px] mb-4 mt-[42px] mx-auto w-fit h-fit p-[10px]",
+                "tab:mt-4",
+                "desktop:mt-4",
+              ])}
+            >
+              <MapSVG />
+            </div>
+            <p
+              className={cn([
+                muli.className,
+                "text-primary font-bold text-center text-sm",
+                "desktop:text-lg",
+              ])}
+            >
+              Blueprint Karir Pribadi
+            </p>
+            <p
+              className={cn([
+                muli.className,
+                "text-neutral-600 text-center text-xs leading-gc-body-4",
+                "desktop:text-base",
+              ])}
+            >
+              Susun rencana karir personal dengan panduan mentor, sesuai passion
+              dan tujuanmu
+            </p>
+          </Card>
+          <Card
+            className={cn([
+              "col-span-6 m-0",
+              "tab:col-span-6",
+              "desktop:col-span-3",
+            ])}
+          >
+            <div
+              className={cn([
+                "bg-[#CDE4E5] rounded-[10px] mb-4 mt-[42px] mx-auto w-fit h-fit p-[10px]",
+                "tab:mt-4",
+                "desktop:mt-4",
+              ])}
+            >
+              <CoperSVG />
+            </div>
+            <p
+              className={cn([
+                muli.className,
+                "text-primary font-bold text-center text-sm",
+                "desktop:text-lg",
+              ])}
+            >
+              Wawasan Industri Terkini
+            </p>
+            <p
+              className={cn([
+                muli.className,
+                "text-neutral-600 text-center text-xs leading-gc-body-4",
+                "desktop:text-base",
+              ])}
+            >
+              Peroleh pengetahuan tentang tren industri terbaru melalui kelas
+              online dengan ahli
+            </p>
+          </Card>
+          <Card
+            className={cn([
+              "col-span-6 m-0",
+              "tab:col-span-6",
+              "desktop:col-span-3",
+            ])}
+          >
+            <div
+              className={cn([
+                "bg-[#FAF8D1] rounded-[10px] mb-4 mt-[42px] mx-auto w-fit h-fit p-[10px]",
+                "tab:mt-4",
+                "desktop:mt-4",
+              ])}
+            >
+              <SmileSVG />
+            </div>
+            <p
+              className={cn([
+                muli.className,
+                "text-primary font-bold text-center text-sm",
+                "desktop:text-lg",
+              ])}
+            >
+              Peningkatan Kepercayaan Diri
+            </p>
+            <p
+              className={cn([
+                muli.className,
+                "text-neutral-600 text-center text-xs leading-gc-body-4",
+                "desktop:text-base",
+              ])}
+            >
+              Bangun kepercayaan diri melalui eksplorasi karir dan sesi coaching
+              bersama mentor
+            </p>
+          </Card>
+          <Card
+            className={cn([
+              "col-span-6 m-0",
+              "tab:col-span-6",
+              "desktop:col-span-3",
+            ])}
+          >
+            <div
+              className={cn([
+                "bg-[#E9F7DE] rounded-[10px] mb-4 mt-[42px] mx-auto w-fit h-fit p-[10px]",
+                "tab:mt-4",
+                "desktop:mt-4",
+              ])}
+            >
+              <UserGroupSVG />
+            </div>
+            <p
+              className={cn([
+                muli.className,
+                "text-primary font-bold text-center text-sm",
+                "desktop:text-lg",
+              ])}
+            >
+              Jaringan Profesional
+            </p>
+            <p
+              className={cn([
+                muli.className,
+                "text-neutral-600 text-center text-xs leading-gc-body-4",
+                "desktop:text-base",
+              ])}
+            >
+              Bangun hubungan dengan mentor untuk dukungan karir yang
+              berkelanjutan
+            </p>
+          </Card>
         </div>
       </section>
       {/* END: Section 5 */}
@@ -476,52 +635,167 @@ export default function Home() {
           >
             Here are the engaging activities that you will do with the coaches:
           </p>
-          <div className={cn(["grid grid-cols-12 gap-4", "desktop:mt-8"])}>
-            {Array(4)
-              .fill(null)
-              .map((item, index) => {
-                return (
-                  <Card
-                    className={cn(["col-span-6 m-0", "desktop:col-span-3"])}
-                    key={index}
-                  >
-                    <div
-                      className={cn([
-                        "bg-primary rounded-full w-20 h-9 mb-4 mt-[42px] mx-auto",
-                        "desktop:mt-4",
-                      ])}
-                    />
-                    <p
-                      className={cn([
-                        muli.className,
-                        "text-primary font-bold text-center text-sm",
-                        "desktop:text-lg",
-                      ])}
-                    >
-                      Skills Assessment
-                    </p>
-                    <p
-                      className={cn([
-                        muli.className,
-                        "text-neutral-600 text-center text-xs leading-gc-body-4",
-                        "desktop:text-base",
-                      ])}
-                    >
-                      Rapid career growth tailored to your goals
-                    </p>
-                  </Card>
-                );
-              })}
+          <div
+            className={cn([
+              "grid grid-cols-12 gap-4",
+              "tab:mt-8",
+              "desktop:mt-8",
+            ])}
+          >
+            <Card
+              className={cn([
+                "col-span-6 m-0",
+                "tab:col-span-6",
+                "desktop:col-span-3",
+              ])}
+            >
+              <div
+                className={cn([
+                  "bg-[#FAF8D1] rounded-[10px] mb-4 mt-[42px] mx-auto w-fit h-fit p-[10px]",
+                  "tab:mt-4",
+                  "desktop:mt-4",
+                ])}
+              >
+                <PersonSearchSVG />
+              </div>
+              <p
+                className={cn([
+                  muli.className,
+                  "text-primary font-bold text-center text-sm",
+                  "desktop:text-lg",
+                ])}
+              >
+                Eksplorasi Passion dan Purpose
+              </p>
+              <p
+                className={cn([
+                  muli.className,
+                  "text-neutral-600 text-center text-xs leading-gc-body-4",
+                  "desktop:text-base",
+                ])}
+              >
+                Temukan passionmu dengan kegiatan interaktif bersama mentor
+              </p>
+            </Card>
+            <Card
+              className={cn([
+                "col-span-6 m-0",
+                "tab:col-span-6",
+                "desktop:col-span-3",
+              ])}
+            >
+              <div
+                className={cn([
+                  "bg-[#CDE4E5] rounded-[10px] mb-4 mt-[42px] mx-auto w-fit h-fit p-[10px]",
+                  "tab:mt-4",
+                  "desktop:mt-4",
+                ])}
+              >
+                <QueryStatsSVG />
+              </div>
+              <p
+                className={cn([
+                  muli.className,
+                  "text-primary font-bold text-center text-sm",
+                  "desktop:text-lg",
+                ])}
+              >
+                Eksplorasi Trend Industri
+              </p>
+              <p
+                className={cn([
+                  muli.className,
+                  "text-neutral-600 text-center text-xs leading-gc-body-4",
+                  "desktop:text-base",
+                ])}
+              >
+                Mentor akan memberi kabar, dan insight terupdate tentang tren
+                industri
+              </p>
+            </Card>
+            <Card
+              className={cn([
+                "col-span-6 m-0",
+                "tab:col-span-6",
+                "desktop:col-span-3",
+              ])}
+            >
+              <div
+                className={cn([
+                  "bg-[#E9F7DE] rounded-[10px] mb-4 mt-[42px] mx-auto w-fit h-fit p-[10px]",
+                  "tab:mt-4",
+                  "desktop:mt-4",
+                ])}
+              >
+                <UserGroupSVG />
+              </div>
+              <p
+                className={cn([
+                  muli.className,
+                  "text-primary font-bold text-center text-sm",
+                  "desktop:text-lg",
+                ])}
+              >
+                Networking dengan Mentor
+              </p>
+              <p
+                className={cn([
+                  muli.className,
+                  "text-neutral-600 text-center text-xs leading-gc-body-4",
+                  "desktop:text-base",
+                ])}
+              >
+                Bangun jaringan dengan mentor, pelajari kiat sukses dari
+                pengalaman mereka
+              </p>
+            </Card>
+            <Card
+              className={cn([
+                "col-span-6 m-0",
+                "tab:col-span-6",
+                "desktop:col-span-3",
+              ])}
+            >
+              <div
+                className={cn([
+                  "bg-[#CAE7D5] rounded-[10px] mb-4 mt-[42px] mx-auto w-fit h-fit p-[10px]",
+                  "tab:mt-4",
+                  "desktop:mt-4",
+                ])}
+              >
+                <MapPinSVG />
+              </div>
+              <p
+                className={cn([
+                  muli.className,
+                  "text-primary font-bold text-center text-sm",
+                  "desktop:text-lg",
+                ])}
+              >
+                Buat Rencana Karir yang Terarah
+              </p>
+              <p
+                className={cn([
+                  muli.className,
+                  "text-neutral-600 text-center text-xs leading-gc-body-4",
+                  "desktop:text-base",
+                ])}
+              >
+                Kembangkan rencana karir yang terarah dengan panduan ahli dari
+                mentor
+              </p>
+            </Card>
           </div>
         </Card>
       </section>
       {/* END: Section 7 */}
       {/* BEGIN: Section 8 */}
-      <section className={cn(["px-4", "desktop:px-[240px]"])}>
+      <section className={cn(["px-4", "tab:px-10", "desktop:px-[240px]"])}>
         <p
           className={cn([
             muli.className,
             "text-primary font-bold text-center mb-6",
+            "tab:text-[52px] tab:mb-10",
             "desktop:text-[52px] desktop:mb-16",
           ])}
         >
@@ -530,7 +804,6 @@ export default function Home() {
         <div className={cn(["grid gap-y-2", "desktop:hidden"])}>
           {TimelineData.map((item, index) => {
             const lastIndex = TimelineData.length - 1;
-
             return (
               <div key={index}>
                 <TimelineCard
@@ -634,7 +907,11 @@ export default function Home() {
           "desktop:px-[240px] desktop:grid desktop:grid-cols-8 desktop:gap-x-[116px]",
         ])}
       >
-        <div className="desktop:flex desktop:flex-col desktop:justify-center desktop:col-span-4 desktop:items-center">
+        <div
+          className={cn([
+            "desktop:flex desktop:flex-col desktop:justify-center desktop:col-span-4 desktop:items-center",
+          ])}
+        >
           <h2
             className={cn([
               "text-neutral-100 text-center font-bold px-[38px]",
@@ -874,6 +1151,7 @@ export default function Home() {
         <h2
           className={cn([
             "text-primary uppercase font-bold text-center mb-6",
+            "tab:text-[35px]",
             "desktop:text-[52px] desktop:px-[270px] desktop:leading-[72px]",
           ])}
         >
@@ -893,6 +1171,7 @@ export default function Home() {
         <div
           className={cn([
             "relative w-[322px] h-[132px] mt-8 mx-auto mb-6",
+            "tab:w-[572px] tab:h-[282px] tab:mt-8 tab:mx-auto tab:mb-6",
             "desktop:hidden",
           ])}
         >

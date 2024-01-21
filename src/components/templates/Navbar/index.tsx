@@ -12,6 +12,8 @@ const Navbar: FC = () => {
     <nav
       className={cn([
         "bg-neutral-100 flex justify-between py-2 px-4 fixed z-50 w-full",
+        "tab:px-10",
+        "laptop:px-20",
         "desktop:px-60",
       ])}
     >

@@ -117,6 +117,8 @@ const config: Config = {
       },
       screens: {
         'tab': "744px",
+        'tab-xl': "900px",
+        'laptop': "1012px",
         'desktop': "1280px"
       }
     },

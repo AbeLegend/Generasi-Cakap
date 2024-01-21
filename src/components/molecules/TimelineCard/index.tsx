@@ -72,6 +72,9 @@ const TimelineCard: FC<TimelineCardProps> = ({
               "grid gap-y-2 mb-2 mt-4 marker:text-neutral-800 px-4",
             ])}
           >
+            <p className="text-center text-gc-body-2 text-neutral-800 font-bold">
+              Materi:
+            </p>
             {item.map((item, index) => {
               return (
                 <li key={index} className={cn(["text-center mx-auto"])}>
