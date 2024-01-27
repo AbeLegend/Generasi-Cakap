@@ -46,6 +46,7 @@ import PersonSearchSVG from "@/svg/person-search.svg";
 import QueryStatsSVG from "@/svg/query-stats.svg";
 import SmileSVG from "@/svg/smile.svg";
 import UserGroupSVG from "@/svg/user-group.svg";
+import { useEffect } from "react";
 
 export default function Home() {
   return (
