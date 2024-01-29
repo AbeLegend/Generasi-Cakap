@@ -116,10 +116,12 @@ const config: Config = {
         },
       },
       screens: {
-        'tab': "744px",
+        'mobile-xl': "500px",
+        'tab': "700px",
         'tab-xl': "900px",
-        'laptop': "1012px",
-        'desktop': "1280px"
+        'laptop': "1100px",
+        'laptop-xl': "1300px",
+        'desktop': "1500px"
       }
     },
   },
