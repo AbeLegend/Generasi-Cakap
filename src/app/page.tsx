@@ -1729,13 +1729,31 @@ export default function Home() {
       <section
         className={cn([
           "bg-[#F8FAFC] px-4",
+          // Mobile
+          // Mobile XL
+          // Tab
+          "tab:px-16 desktop:py-[192px]",
+          // Tab XL
+          "tab-xl:px-20 desktop:py-[192px]",
+          // Laptop
+          "laptop:px-32 desktop:py-[192px]",
+          // Laptop XL
+          "laptop-xl:px-32 desktop:py-[192px]",
+          // Desktop
           "desktop:px-[240px] desktop:py-[192px]",
         ])}
       >
         <h2
           className={cn([
             "uppercase text-primary font-bold text-center mb-6",
-            "desktop:hidden",
+            // Mobile
+            // Mobile XL
+            // Tab
+            "tab:hidden",
+            // Tab XL
+            // Laptop
+            // Laptop XL
+            // Desktop
           ])}
         >
           Frequently asked questions
@@ -1743,12 +1761,36 @@ export default function Home() {
         <h2
           className={cn([
             "hidden",
+            // Mobile
+            // Mobile XL
+            // Tab
+            "tab:block tab:uppercase tab:text-primary tab:font-bold tab:text-center tab:text-[29px] tab:mb-12",
+            // Tab XL
+            "tab-xl:block tab-xl:uppercase tab-xl:text-primary tab-xl:font-bold tab-xl:text-center tab-xl:text-[32px] tab-xl:mb-14",
+            // Laptop
+            "laptop:block laptop:uppercase laptop:text-primary laptop:font-bold laptop:text-center laptop:text-[42px] laptop:mb-16",
+            // Laptop XL
+            "laptop-xl:block laptop-xl:uppercase laptop-xl:text-primary laptop-xl:font-bold laptop-xl:text-center laptop-xl:text-[42px] laptop-xl:mb-16",
+            // Desktop
             "desktop:block desktop:uppercase desktop:text-primary desktop:font-bold desktop:text-center desktop:text-[52px] desktop:mb-16",
           ])}
         >
           Faq (Frequently asked questions)
         </h2>
-        <div className={cn(["grid gap-y-4", "desktop:gap-y-6"])}>
+        <div
+          className={cn([
+            "grid gap-y-4",
+            // Mobile
+            // Mobile XL
+            // Tab
+            // Tab XL
+            // Laptop
+            // Laptop XL
+            "laptop-xl:gap-y-6",
+            // Desktop
+            "desktop:gap-y-6",
+          ])}
+        >
           {FAQData.map((item, index) => {
             return (
               <FAQCard
@@ -1756,7 +1798,14 @@ export default function Home() {
                 question={item.question}
                 answer={item.answer}
                 className={cn([
-                  "desktop:shadow-[0_0_20px_0px_rgba(28,15,172,0.12)]",
+                  // Mobile
+                  // Mobile XL
+                  // Tab
+                  "shadow-[0_0_20px_0px_rgba(28,15,172,0.12)]",
+                  // Tab XL
+                  // Laptop
+                  // Laptop XL
+                  // Desktop
                 ])}
               />
             );
