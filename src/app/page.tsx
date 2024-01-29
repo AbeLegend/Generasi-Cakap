@@ -830,6 +830,17 @@ export default function Home() {
         <h2
           className={cn([
             "uppercase text-neutral-100 font-bold text-center px-4",
+            // Mobile
+            // Mobile XL
+            // Tab
+            "tab:text-[32px] tab:mb-2",
+            // Tab XL
+            "tab-xl:text-[32px] tab-xl:mb-4",
+            // Laptop
+            "laptop:text-[42px] laptop:mb-4",
+            // Laptop XL
+            "laptop-xl:text-[42px] laptop-xl:mb-4",
+            // Desktop
             "desktop:text-[52px] desktop:mb-4",
           ])}
         >
@@ -839,13 +850,39 @@ export default function Home() {
           className={cn([
             muli.className,
             "text-neutral-100 text-sm text-center mb-[17px] px-4",
+            // Mobile
+            // Mobile XL
+            // Tab
+            "tab:text-base tab:mb-4",
+            // Tab XL
+            "tab-xl:text-base tab-xl:mb-8",
+            // Laptop
+            "laptop:text-lg laptop:mb-8",
+            // Laptop XL
+            "laptop-xl:text-lg laptop-xl:mb-8",
+            // Desktop
             "desktop:text-lg desktop:mb-8",
           ])}
         >
           Meet the experts who will guide you along your career journey
         </p>
         {/* BEGIN: Horizontal Card */}
-        <div className="flex overflow-x-scroll gap-x-4 px-4 pb-[108px] desktop:hidden">
+        <div
+          className={cn([
+            "flex overflow-x-scroll gap-x-4 px-4 pb-[108px]",
+            // Mobile
+            // Mobile XL
+            // Tab
+            // Tab XL
+            "tab-xl:hidden",
+            // Laptop
+            "laptop:hidden",
+            // Laptop XL
+            "laptop-xl:hidden",
+            // Desktop
+            "desktop:hidden",
+          ])}
+        >
           {Array(10)
             .fill(null)
             .map((item, index) => {
@@ -859,7 +896,22 @@ export default function Home() {
               );
             })}
         </div>
-        <div className="hidden desktop:block desktop:mb-24">
+        <div
+          className={cn([
+            "hidden",
+            // Mobile
+            // Mobile XL
+            // Tab
+            // Tab XL
+            "tab-xl:block tab-xl:mb-24",
+            // Laptop
+            "laptop:block laptop:mb-24",
+            // Laptop XL
+            "laptop-xl:block laptop-xl:mb-24",
+            // Desktop
+            "desktop:block desktop:mb-24",
+          ])}
+        >
           <Swiper
             modules={[Autoplay, Navigation, Scrollbar, A11y, Pagination]}
             slidesPerView={1}
