@@ -39,6 +39,7 @@ import CareerCatalystsLargeImage from "@/images/career catalyst-large.png";
 import CareerPathImage from "@/images/career-path.png";
 import SponsorsLargeImage from "@/images/sponsors-large.png";
 import CareerCatalystImage from "@/images/career-catalyst-fix.png";
+import IdontKnowImage from "@/images/idontknow.png";
 
 // SVG
 import CoperSVG from "@/svg/coper.svg";
@@ -290,7 +291,7 @@ export default function Home() {
 
         <hr
           className={cn([
-            "mx-16 bg-neutral-500 border-none h-[1px] mb-6",
+            "mx-16 bg-neutral-500 border-none h-[1px] my-6",
             "tab:hidden",
           ])}
         />
@@ -300,48 +301,137 @@ export default function Home() {
       {/* BEGIN: Section 3 */}
       <section
         className={cn([
-          "tab:grid tab:grid-cols-8 tab:mt-12 tab:mb-32",
-          "desktop:px-[240px] desktop:grid desktop:grid-cols-8 desktop:mt-12 desktop:mb-64",
+          // Mobile
+          // Mobile XL
+          // Tab
+          "tab:grid tab:grid-cols-8 tab:mt-12 tab:mb-32 tab:px-10",
+          // Tab XL
+          "tab-xl:grid tab-xl:grid-cols-8 tab-xl:mt-12 tab-xl:mb-64",
+          // Laptop
+          "laptop:grid laptop:grid-cols-8 laptop:mt-12 laptop:mb-64 laptop:px-0",
+          // Laptop XL
+          "laptop-xl:grid laptop-xl:grid-cols-8 laptop-xl:mt-12 laptop-xl:mb-64",
+          // Desktop
+          "desktop:px-32 desktop:grid desktop:grid-cols-8 desktop:mt-12 desktop:mb-64",
         ])}
       >
         <Card
           className={cn([
-            "tab:col-span-6 tab:col-start-2 tab:py-8 tab:px-6 tab:mx-10",
-            "desktop:col-span-6 desktop:col-start-2 desktop:py-8 desktop:px-6 desktop:mx-10",
+            // Mobile
+            // Mobile XL
+            // Tab
+            "tab:col-span-8 tab:py-8",
+            // Tab XL
+            // Laptop
+            "laptop:col-span-6 laptop:col-start-2 laptop:py-8",
+            // Laptop XL
+            // Desktop
           ])}
         >
           <p
             className={cn([
               muli.className,
-              "text-sm text-neutral-700 text-center mb-[18px]",
+              "text-sm text-neutral-700 mb-[18px]",
+              // Mobile
+              // Mobile XL
+              // Tab
+              "tab:text-lg",
+              // Tab XL
+              "tab-xl:text-lg",
+              // Laptop
+              "laptop:text-lg",
+              // Laptop XL
+              "laptop-xl:text-lg",
+              // Desktop
               "desktop:text-lg",
             ])}
           >
-            Sebuah Program Career Development dan Coaching intensif selama{" "}
-            <span className="text-neutral-900 font-bold"> 2 bulan </span>
-            untuk membantu menavigasi karir terbaik untuk kamu yang:
+            Dalam Career Catalyst, sebuah intensif pengembangan karir selama 2
+            bulan degan tujuan membimbing #TemanCakap dalam merancang blueprint
+            karir yang sukses dan rencana untuk memetakan perkembangan diri dan
+            karir. Program ini cocok untuk kamu yang:
           </p>
           {/* BEGIN: List */}
-          <ul
+          <div
             className={cn([
-              muli.className,
-              "text-sm text-neutral-900",
-              "desktop:text-lg desktop:grid desktop:gap-y-4 desktop:mt-8",
+              // Mobile
+              // Mobile XL
+              // Tab
+              "tab:flex tab:justify-between",
+              // Tab XL
+              // Laptop
+              // Laptop XL
+              // Desktop
             ])}
           >
-            <li className="flex gap-x-2">
-              <CircleCheckSVG /> Fresh Graduate
-            </li>
-            <li className="flex gap-x-2">
-              <CircleCheckSVG /> Lulusan S2 yang belum bekerja
-            </li>
-            <li className="flex gap-x-2">
-              <CircleCheckSVG /> Sedang tertarik untuk career change
-            </li>
-            <li className="flex gap-x-2">
-              <CircleCheckSVG /> Early Career Worker
-            </li>
-          </ul>
+            <ul
+              className={cn([
+                muli.className,
+                // Mobile
+                "text-sm text-neutral-900 font-semibold w-full",
+                // Mobile XL
+                // Tab
+                "tab:max-w-[70%]",
+                "tab:text-lg tab:grid tab:gap-y-4 tab:mt-8",
+                // Tab XL
+                "tab-xl:text-lg tab-xl:grid tab-xl:gap-y-4 tab-xl:mt-8",
+                // Laptop
+                "laptop:text-lg laptop:grid laptop:gap-y-4 laptop:mt-8",
+                // Laptop XL
+                "laptop-xl:text-lg laptop-xl:grid laptop-xl:gap-y-4 laptop-xl:mt-8",
+                // Desktop
+                "desktop:text-lg desktop:grid desktop:gap-y-4 desktop:mt-8",
+              ])}
+            >
+              <li className="flex gap-x-2 ">
+                <CircleCheckSVG />
+                <span className="w-fit inline">
+                  Undergraduate/mahasiswa tingkat akhir
+                </span>
+              </li>
+              <li className="flex gap-x-2 ">
+                <CircleCheckSVG />
+                <span className="w-fit inline">
+                  Fresh Graduate yang masih bingung menetukan jalur karir
+                </span>
+              </li>
+              <li className="flex gap-x-2 ">
+                <CircleCheckSVG />
+                <span className="w-fit inline">
+                  Kamu yang sudah bekerja tapi ragu untuk resign atau bertahan
+                </span>
+              </li>
+              <li className="flex gap-x-2 ">
+                <CircleCheckSVG />
+                <span className="w-fit inline">
+                  Kamu yang ingin melakukan career changing dari ke industri
+                  atau role lain
+                </span>
+              </li>
+              <li className="flex gap-x-2 ">
+                <CircleCheckSVG />
+                <span className="w-fit inline">
+                  Sudah lama lulus kuliah, ikut magang sana-sini namun belum
+                  mendapatkan pekerjaan impian
+                </span>
+              </li>
+            </ul>
+            <div
+              className={cn([
+                // Mobile
+                "hidden",
+                // Mobile XL
+                // Tab
+                "tab:block tab:relative tab:min-w-[30%] tab:aspect-[228/187] tab:self-end",
+                // Tab XL
+                // Laptop
+                // Laptop XL
+                // Desktop
+              ])}
+            >
+              <Image alt="" src={IdontKnowImage} layout="fill" />
+            </div>
+          </div>
           {/* END: List */}
         </Card>
       </section>
