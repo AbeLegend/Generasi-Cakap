@@ -302,6 +302,7 @@ export default function Home() {
       <section
         className={cn([
           // Mobile
+          "mb-32",
           // Mobile XL
           // Tab
           "tab:grid tab:grid-cols-8 tab:mt-12 tab:mb-32 tab:px-10",
@@ -437,7 +438,7 @@ export default function Home() {
       </section>
       {/* END: Section 3 */}
       {/* BEGIN: Section 4 */}
-      <section className="px-4">
+      <section className="px-4 mb-32">
         <Swiper
           modules={[Autoplay, Navigation, Scrollbar, A11y, Pagination]}
           slidesPerView={1}
