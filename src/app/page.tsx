@@ -40,6 +40,7 @@ import CareerPathImage from "@/images/career-path.png";
 import SponsorsLargeImage from "@/images/sponsors-large.png";
 import CareerCatalystImage from "@/images/career-catalyst-fix.png";
 import IdontKnowImage from "@/images/idontknow.png";
+import GCXCIImage from "@/images/gc-x-ci.png";
 
 // SVG
 import CoperSVG from "@/svg/coper.svg";
@@ -1679,7 +1680,7 @@ export default function Home() {
             // Mobile
             // Mobile XL
             // Tab
-            "tab:col-span-5 tab:w-[440px] tab:h-[224px]",
+            "tab:col-span-5 tab:w-[370px] tab:h-[188px]",
             // Tab XL
             "tab-xl:col-span-5 tab-xl:w-[480px] tab-xl:h-[257px]",
             // Laptop
@@ -1732,7 +1733,7 @@ export default function Home() {
           // Mobile
           // Mobile XL
           // Tab
-          "tab:px-16 desktop:py-[192px]",
+          "tab:px-16 desktop:py-[192px] tab:mb-[320px]",
           // Tab XL
           "tab-xl:px-20 desktop:py-[192px]",
           // Laptop
@@ -1798,10 +1799,10 @@ export default function Home() {
                 question={item.question}
                 answer={item.answer}
                 className={cn([
+                  "shadow-[0_0_20px_0px_rgba(28,15,172,0.12)]",
                   // Mobile
                   // Mobile XL
                   // Tab
-                  "shadow-[0_0_20px_0px_rgba(28,15,172,0.12)]",
                   // Tab XL
                   // Laptop
                   // Laptop XL
@@ -1814,54 +1815,92 @@ export default function Home() {
       </section>
       {/* END: Section 11 */}
       {/* BEGIN: Section 12 */}
-      <section className={cn(["py-[46px] px-1", "desktop:px-[240px]"])}>
+      <section
+        className={cn([
+          "py-[46px] px-0",
+          // Mobile
+          // Mobile XL
+          // Tab
+          "tab:px-0",
+          // Tab XL
+          // Laptop
+          "laptop:px-20",
+          // Laptop XL
+          // Desktop
+          "desktop:px-32",
+        ])}
+      >
         <h2
           className={cn([
             "text-primary uppercase font-bold text-center",
+            // Mobile
+            "text-[25px]",
+            // Mobile XL
+            // Tab
+            "tab:text-[32px]",
+            // Tab XL
+            "tab-xl:text-[37px]",
+            // Laptop
+            "laptop:text-[42px]",
+            // Laptop XL
+            "laptop-xl:text-[52px]",
+            // Desktop
             "desktop:text-[52px]",
           ])}
         >
-          ORGANIZED BY
+          diadakan oleh
         </h2>
         <div
           className={cn([
             "relative w-[250px] h-[84px] mt-8 mx-auto mb-6",
-            "desktop:w-[551px] desktop:h-[186px] desktop:mt-16 desktop:mb-[50px]",
+            // Mobile
+            "w-[300px] h-[38px] mt-10 mb-[56px]",
+            // Mobile XL
+            // Tab
+            "tab:w-[450px] tab:h-[58px] tab:mt-12 tab:mb-[66px]",
+            // Tab XL
+            "tab-xl:w-[550px] tab-xl:h-[70px] tab-xl:mt-12 tab-xl:mb-[66px]",
+            // Laptop
+            "laptop:w-[700px] laptop:h-[90px] laptop:mt-16 laptop:mb-[76px]",
+            // Laptop XL
+            "laptop-xl:w-[890px] laptop-xl:h-[114px] laptop-xl:mt-16 laptop-xl:mb-[76px]",
+            // Desktop
+            "desktop:w-[940px] desktop:h-[121px] desktop:mt-16 desktop:mb-[76px]",
           ])}
         >
           <Image
-            alt="logo-generasi-cakap"
-            src={LogoGenerasiCakapBigImage}
+            alt="generasi-cakap-x-coaching-indonesia"
+            src={GCXCIImage}
             layout="fill"
           />
         </div>
+
         <p
           className={cn([
             mulish.className,
-            "text-neutral-900 text-sm px-4",
-            "desktop:hidden",
+
+            "text-neutral-900 px-4 text-base",
+            // Mobile
+            // Mobile XL
+            // Tab
+            "tab:px-[80px] tab:text-lg",
+            // Tab XL
+            "laptop:px-[139px]",
+            // Laptop
+            // Laptop XL
+            // Desktop
           ])}
         >
           Generasi Cakap merupakan start-up psikologi & edukasi (psiedukasi)
           yang berfokus dalam pengembangan diri dan program untuk membangun
           dukungan sosial psikologis bagi generasi usia produktif dalam
           mengembangkan diri di dunia karir.
-        </p>
-        <p
-          className={cn([
-            mulish.className,
-            "hidden",
-            "text-neutral-900 text-lg px-4",
-            "desktop:block desktop:px-[139px]",
-          ])}
-        >
-          Generasi Cakap merupakan start-up psikologi & edukasi (psiedukasi)
-          yang berfokus dalam pengembangan diri dan program untuk membangun
-          dukungan sosial psikologis bagi generasi usia produktif dalam
-          mengembangkan diri di dunia karir. <br /> <br />
+          <br />
+          <br />
           Melalui program edukasi, riset dan pengembangan serta pendampingan
           psikologis, kami mendampingi organisasi/ perusahaan Anda dalam
-          manajemen talenta, pelatihan dan pengembangan karyawan,dll. <br />{" "}
+          manajemen talenta, pelatihan dan pengembangan karyawan,dll.
+          <br />
           <br />
           Saat ini, Generasi Cakap berada di bawah naungan Yayasan Generasi
           Cahaya Kebaikan yang didirikan berdasarkan hukum negara Republik
