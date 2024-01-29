@@ -28,7 +28,7 @@ const FAQData: Array<FAQItem> = [
 
 interface TimelineItem {
   title: string;
-  date: string;
+  date: string | null;
   item?: Array<string>;
   isKickOff: boolean;
   isOrange: boolean;
@@ -36,73 +36,67 @@ interface TimelineItem {
 
 const TimelineData: Array<TimelineItem> = [
   {
-    date: "12 January 2024",
+    date: null,
     isKickOff: false,
     isOrange: false,
     title: "Pre-Assignment & Self Assesment",
-    item: ["Transform Your Professional Journey with Personalized Guidance"]
+    item: ["Transform Your Professional Journey with Personalized Guidance", "Personal & Professional Awareness"]
   },
   {
-    date: "12 January 2024",
+    date: "19 Februari 2024",
     isKickOff: true,
     isOrange: true,
     title: "KICK OFF!"
   },
   {
-    date: "13 January 2024",
+    date: "19 Februari 2024",
     isKickOff: true,
-    isOrange: false,
-    title: "In-class Learning: Session #1"
-  },
-  {
-    date: "13 January 2024",
-    isKickOff: false,
     isOrange: false,
     title: "In-class Learning: Session #1",
     item: ["Personal & Professional Awareness", "Values and Interest Exploration"]
   },
   {
-    date: "20 January 2024",
+    date: "24 Februari 2024",
     isKickOff: false,
     isOrange: false,
     title: "Coaching Session",
-    item: ["Chemistry and Goal Setting"]
+    item: ["Chemistry and Goal Setting", "Personal & Professional Awareness"]
   },
   {
-    date: "27 January 2024",
+    date: "29 Februari 2024",
     isKickOff: false,
     isOrange: false,
     title: "In-class Learning: Session #2",
-    item: ["Job Market Trends & Networking Strategies", "LinkedIn & Jobstreet Optimization"]
+    item: ["Job Market Trends & Networking Strategies", "LinkedIn & Jobstreet Optimization", "LinkedIn & Jobstreet Optimization"]
   },
   {
-    date: "3 February 2024",
+    date: "4 Maret 2024",
     isKickOff: false,
     isOrange: false,
     title: "In-class Learning: Session #3",
-    item: ['Durable & Transfarable Skills for Future Works']
+    item: ['Durable & Transfarable Skills for Future Works', "Personal & Professional Awareness"]
   },
   {
-    date: "10 Februari 2024",
+    date: "9 Maret 2024",
     isKickOff: true,
     isOrange: false,
-    title: "1-on-1 Coaching"
+    title: "In-class Learning: Session #1"
   },
   {
-    date: "17 Februari 2024",
+    date: "14 Maret 2024",
     isKickOff: false,
     isOrange: false,
     title: "In-class Learning: Session #4",
-    item: ["Personal Branding"]
+    item: ["Personal Branding", "Personal & Professional Awareness"]
   },
   {
-    date: "24 Februari 2024",
+    date: "21 Maret 2024",
     isKickOff: true,
     isOrange: false,
-    title: "1-on-1 Coaching"
+    title: "In-class Learning: Session #1"
   },
   {
-    date: "25 Februari 2024",
+    date: "23 Maret 2024",
     isKickOff: true,
     isOrange: true,
     title: "Networking & Closing Program"

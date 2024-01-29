@@ -5,7 +5,7 @@ import { cn, mulish } from "@/lib";
 
 interface TimelineCardProps {
   title: string;
-  date: string;
+  date: string | null;
   item?: Array<string>;
   isKickOff: boolean;
   isOrange: boolean;
@@ -50,12 +50,13 @@ const TimelineCard: FC<TimelineCardProps> = ({
             : isOrange
             ? "bg-[#F59D07]"
             : "bg-transparent",
+          date === null && "hidden",
         ])}
       >
         <div
           className={cn([
             mulish.className,
-            "rounded-lg text-center text-sm font-semibold py-1 mx-2",
+            "rounded-lg text-center text-sm font-bold py-1 mx-2",
             isOrange
               ? "bg-neutral-100 text-secondary-pressed"
               : "bg-info-surface text-info-pressed",
@@ -68,20 +69,18 @@ const TimelineCard: FC<TimelineCardProps> = ({
       <div className="pb-1">
         {item && item.length > 0 && (
           <ul
-            className={cn([
-              "grid gap-y-2 mb-2 mt-4 marker:text-neutral-800 px-4",
-            ])}
+            className={cn(["grid gap-y-2 mt-0 marker:text-neutral-800 px-4"])}
           >
-            <p className="text-center text-gc-body-2 text-neutral-800 font-bold">
+            {/* <p className="text-center text-gc-body-2 text-neutral-800 font-bold">
               Materi:
-            </p>
+            </p> */}
             {item.map((item, index) => {
               return (
                 <li key={index} className={cn(["text-center mx-auto"])}>
                   <span
                     className={cn([
                       mulish.className,
-                      "text-sm text-neutral-800",
+                      "text-base text-neutral-800",
                       "relative",
                       "before:content-[' '] before:w-[5px] before:h-[5px] before:bg-neutral-800 before:rounded-full before:absolute before:-left-3 before:top-2",
                     ])}

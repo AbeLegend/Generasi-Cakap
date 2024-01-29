@@ -1227,18 +1227,51 @@ export default function Home() {
       </section>
       {/* END: Section 7 */}
       {/* BEGIN: Section 8 */}
-      <section className={cn(["px-4", "tab:px-10", "desktop:px-[240px]"])}>
+      <section
+        className={cn([
+          "px-4",
+          // Mobile
+          // Mobile XL
+          // Tab
+          "tab:px-10",
+          // Tab XL
+          // Laptop
+          "tab:px-20",
+          // Laptop XL
+          // Desktop
+          "desktop:px-32",
+        ])}
+      >
         <p
           className={cn([
             muli.className,
             "text-primary font-bold text-center mb-6",
+            // Mobile
+            // Mobile XL
+            // Tab
             "tab:text-[52px] tab:mb-10",
+            // Tab XL
+            // Laptop
+            // Laptop XL
+            // Desktop
             "desktop:text-[52px] desktop:mb-16",
           ])}
         >
           TIMELINE
         </p>
-        <div className={cn(["grid gap-y-2", "desktop:hidden"])}>
+        <div
+          className={cn([
+            "grid gap-y-2",
+            // Mobile
+            // Mobile XL
+            // Tab
+            // Tab XL
+            // Laptop
+            "laptop:hidden",
+            // Laptop XL
+            // Desktop
+          ])}
+        >
           {TimelineData.map((item, index) => {
             const lastIndex = TimelineData.length - 1;
             return (
@@ -1263,41 +1296,53 @@ export default function Home() {
             );
           })}
         </div>
-        <div className={cn(["hidden", "desktop:grid desktop:grid-cols-7"])}>
+        <div
+          className={cn([
+            "hidden",
+            // Mobile
+            // Mobile XL
+            // Tab
+            // Tab XL
+            // Laptop
+            // Laptop XL
+            // Desktop
+            "laptop:grid laptop:grid-cols-7",
+          ])}
+        >
           {TimelineData.map((item, index) => {
             const lastIndex = TimelineData.length - 1;
             return (
               <div
                 key={index}
                 className={cn([
-                  "desktop:col-span-7 desktop:grid desktop:grid-cols-7",
+                  "laptop:col-span-7 laptop:grid laptop:grid-cols-7",
                 ])}
               >
                 {(index + 1) % 2 !== 0 && (
                   <div
                     className={cn([
-                      "desktop:col-span-1 desktop:col-start-4 desktop:self-center desktop:mx-auto",
-                      "desktop:relative desktop:w-full desktop:h-full",
-                      "desktop:flex desktop:justify-center desktop:items-center",
-                      "before:desktop:content-[' '] before:desktop:absolute before:desktop:w-2/5 before:desktop:h-[0.5px] before:desktop:bg-black before:desktop:right-0 before:desktop:mx-3",
-                      "after:desktop:content-[' '] after:desktop:absolute after:desktop:w-1.5 after:desktop:h-1.5 after:desktop:bg-black after:desktop:right-0 after:desktop:mx-3 after:desktop:rounded-full",
+                      "laptop:col-span-1 laptop:col-start-4 laptop:self-center laptop:mx-auto",
+                      "laptop:relative laptop:w-full laptop:h-full",
+                      "laptop:flex laptop:justify-center laptop:items-center",
+                      "before:laptop:content-[' '] before:laptop:absolute before:laptop:w-2/5 before:laptop:h-[0.5px] before:laptop:bg-black before:laptop:right-0 before:laptop:mx-3",
+                      "after:laptop:content-[' '] after:laptop:absolute after:laptop:w-1.5 after:laptop:h-1.5 after:laptop:bg-black after:laptop:right-0 after:laptop:mx-3 after:laptop:rounded-full",
                     ])}
                   >
                     <div
                       className={cn([
-                        "desktop:w-1 desktop:h-1 desktop:rounded-full desktop:bg-transparent desktop:p-1 desktop:border desktop:border-black",
-                        "before:desktop:content-[' '] before:desktop:absolute before:desktop:w-[0.5px] before:desktop:h-1/2 before:desktop:bg-neutral-700 before:desktop:-bottom-1",
-                        "after:desktop:content-[' '] after:desktop:absolute after:desktop:w-[0.5px] after:desktop:h-1/2 after:desktop:bg-neutral-700 after:desktop:-top-1",
-                        index === 0 && "after:desktop:hidden",
-                        index === lastIndex && "before:desktop:hidden",
+                        "laptop:w-1 laptop:h-1 laptop:rounded-full laptop:bg-transparent laptop:p-1 laptop:border laptop:border-black",
+                        "before:laptop:content-[' '] before:laptop:absolute before:laptop:w-[0.5px] before:laptop:h-1/2 before:laptop:bg-neutral-700 before:laptop:-bottom-1",
+                        "after:laptop:content-[' '] after:laptop:absolute after:laptop:w-[0.5px] after:laptop:h-1/2 after:laptop:bg-neutral-700 after:laptop:-top-1",
+                        index === 0 && "after:laptop:hidden",
+                        index === lastIndex && "before:laptop:hidden",
                       ])}
                     ></div>
                   </div>
                 )}
                 <div
                   className={cn([
-                    "desktop:col-span-3",
-                    (index + 1) % 2 !== 0 && "desktop:col-start-5 ",
+                    "laptop:col-span-3",
+                    (index + 1) % 2 !== 0 && "laptop:col-start-5 ",
                   ])}
                 >
                   <TimelineCard
@@ -1312,20 +1357,20 @@ export default function Home() {
                 {(index + 1) % 2 === 0 && (
                   <div
                     className={cn([
-                      "desktop:self-center desktop:mx-auto",
-                      "desktop:relative desktop:w-full desktop:h-full",
-                      "desktop:flex desktop:justify-center desktop:items-center",
-                      "before:desktop:content-[' '] before:desktop:absolute before:desktop:w-2/5 before:desktop:h-[0.5px] before:desktop:bg-black before:desktop:left-0 before:desktop:mx-3",
-                      "after:desktop:content-[' '] after:desktop:absolute after:desktop:w-1.5 after:desktop:h-1.5 after:desktop:bg-black after:desktop:left-0 after:desktop:mx-3 after:desktop:rounded-full",
+                      "laptop:self-center laptop:mx-auto",
+                      "laptop:relative laptop:w-full laptop:h-full",
+                      "laptop:flex laptop:justify-center laptop:items-center",
+                      "before:laptop:content-[' '] before:laptop:absolute before:laptop:w-2/5 before:laptop:h-[0.5px] before:laptop:bg-black before:laptop:left-0 before:laptop:mx-3",
+                      "after:laptop:content-[' '] after:laptop:absolute after:laptop:w-1.5 after:laptop:h-1.5 after:laptop:bg-black after:laptop:left-0 after:laptop:mx-3 after:laptop:rounded-full",
                     ])}
                   >
                     <div
                       className={cn([
-                        "desktop:w-1 desktop:h-1 desktop:rounded-full desktop:bg-transparent desktop:p-1 desktop:border desktop:border-black",
-                        "before:desktop:content-[' '] before:desktop:absolute before:desktop:w-[0.5px] before:desktop:h-1/2 before:desktop:bg-neutral-700 before:desktop:-bottom-1",
-                        "after:desktop:content-[' '] after:desktop:absolute after:desktop:w-[0.5px] after:desktop:h-1/2 after:desktop:bg-neutral-700 after:desktop:-top-1",
-                        index === 0 && "after:desktop:hidden",
-                        index === lastIndex && "before:desktop:hidden",
+                        "laptop:w-1 laptop:h-1 laptop:rounded-full laptop:bg-transparent laptop:p-1 laptop:border laptop:border-black",
+                        "before:laptop:content-[' '] before:laptop:absolute before:laptop:w-[0.5px] before:laptop:h-1/2 before:laptop:bg-neutral-700 before:laptop:-bottom-1",
+                        "after:laptop:content-[' '] after:laptop:absolute after:laptop:w-[0.5px] after:laptop:h-1/2 after:laptop:bg-neutral-700 after:laptop:-top-1",
+                        index === 0 && "after:laptop:hidden",
+                        index === lastIndex && "before:laptop:hidden",
                       ])}
                     ></div>
                   </div>
