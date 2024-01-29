@@ -538,7 +538,7 @@ export default function Home() {
             "desktop:text-lg desktop:max-w-[371px] desktop:mx-auto",
           ])}
         >
-          Check Out the Amazing Benefits Coming Your Way
+          Simak keuntungan menarik yang nanti akan kamu dapatkan
         </p>
         <div
           className={cn([
@@ -864,7 +864,8 @@ export default function Home() {
             "desktop:text-lg desktop:mb-8",
           ])}
         >
-          Meet the experts who will guide you along your career journey
+          Kenalan dengan para Coach yang bakal bimbing kamu menemukan karir
+          terbaik!
         </p>
         {/* BEGIN: Horizontal Card */}
         <div
@@ -971,36 +972,90 @@ export default function Home() {
       </section>
       {/* END: Section 6 */}
       {/* BEGIN: Section 7 */}
-      <section className={cn(["relative -top-16 z-10", "desktop:px-[240px]"])}>
+      <section
+        className={cn([
+          "relative -top-16 z-10",
+          // Mobile
+          // Mobile XL
+          // Tab
+          // Tab XL
+          // Laptop
+          "laptop:px-20 laptop:-top-20",
+          // Laptop XL
+          "laptop-xl:px-20 laptop-xl`:-top-20",
+          // Desktop
+          "desktop:px-32 desktop:-top-20",
+        ])}
+      >
         <Card className="border-none bg-[#F8FAFC] my-0">
           <h2
             className={cn([
               "text-primary font-bold text-center uppercase leading-9 px-4 mb-4",
-              "desktop:text-[52px] desktop:mt-8 desktop:max-w-[1000px] desktop:mx-auto desktop:leading-[72px]",
+              // Mobile
+              "text-[20px] mt-8 mx-auto leading-[32px]",
+              // Mobile XL
+              "mobile-xl:text-[30px] mobile-xl:mt-8 mobile-xl:mx-auto mobile-xl:leading-[40px]",
+              // Tab
+              "tab:text-[42px] tab:mt-8 tab:max-w-[800px] tab:mx-auto tab:leading-[52px]",
+              // Tab XL
+              "tab-xl:text-[42px] tab-xl:mt-8 tab-xl:max-w-[800px] tab-xl:mx-auto tab-xl:leading-[62px]",
+              // Laptop
+              "laptop:text-[42px] laptop:mt-8 laptop:max-w-[800px] laptop:mx-auto laptop:leading-[62px]",
+              // Laptop XL
+              "laptop-xl:text-[47px] laptop-xl:mt-8 laptop-xl:max-w-[800px] laptop-xl:mx-auto laptop-xl:leading-[62px]",
+              // Desktop
+              "desktop:text-[52px] desktop:mt-8 desktop:max-w-[900px] desktop:mx-auto desktop:leading-[72px]",
             ])}
           >
-            Engaging activity with the coaches
+            Kegiatan interaktif dengan para coach
           </h2>
           <p
             className={cn([
               muli.className,
               "text-neutral-900 text-sm text-center",
+              // Mobile
+              // Mobile XL
+              // Tab
+              "tab:text-base",
+              // Tab XL
+              "tab-xl:text-base",
+              // Laptop
+              "laptop:text-base",
+              // Laptop XL
+              "laptop-xl:text-base",
+              // Desktop
               "desktop:text-lg",
             ])}
           >
-            Here are the engaging activities that you will do with the coaches:
+            Intip kegiatan seru dan interaktif yang bakal kamu jalani dengan
+            para Coach:
           </p>
           <div
             className={cn([
               "grid grid-cols-12 gap-4",
+              // Mobile
+              // Mobile XL
+              // Tab
               "tab:mt-8",
+              // Tab XL
+              // Laptop
+              // Laptop XL
+              // Desktop
               "desktop:mt-8",
             ])}
           >
             <Card
               className={cn([
                 "col-span-6 m-0",
-                "tab:col-span-6",
+                // Mobile
+                // Mobile XL
+                // Tab
+                // Tab XL
+                // Laptop
+                "laptop:col-span-3",
+                // Laptop XL
+                "laptop-xl:col-span-3",
+                // Desktop
                 "desktop:col-span-3",
               ])}
             >
@@ -1035,7 +1090,15 @@ export default function Home() {
             <Card
               className={cn([
                 "col-span-6 m-0",
-                "tab:col-span-6",
+                // Mobile
+                // Mobile XL
+                // Tab
+                // Tab XL
+                // Laptop
+                "laptop:col-span-3",
+                // Laptop XL
+                "laptop-xl:col-span-3",
+                // Desktop
                 "desktop:col-span-3",
               ])}
             >
@@ -1071,7 +1134,15 @@ export default function Home() {
             <Card
               className={cn([
                 "col-span-6 m-0",
-                "tab:col-span-6",
+                // Mobile
+                // Mobile XL
+                // Tab
+                // Tab XL
+                // Laptop
+                "laptop:col-span-3",
+                // Laptop XL
+                "laptop-xl:col-span-3",
+                // Desktop
                 "desktop:col-span-3",
               ])}
             >
@@ -1107,7 +1178,15 @@ export default function Home() {
             <Card
               className={cn([
                 "col-span-6 m-0",
-                "tab:col-span-6",
+                // Mobile
+                // Mobile XL
+                // Tab
+                // Tab XL
+                // Laptop
+                "laptop:col-span-3",
+                // Laptop XL
+                "laptop-xl:col-span-3",
+                // Desktop
                 "desktop:col-span-3",
               ])}
             >
