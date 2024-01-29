@@ -32,7 +32,7 @@ import SliderImage from "@/images/dummy/slider.png";
 import ProfileImage from "@/images/dummy/profile.png";
 import CompanyImage from "@/images/company.png";
 import SponsorsImage from "@/images/sponsors.png";
-import InstagramImage from "@/images/instagram.png";
+import InstagramImage from "@/images/logo-ig.png";
 import LinkedinImage from "@/images/linkedin.png";
 import TimelineDownSVG from "@/svg/timeline-down.svg";
 import CareerCatalystsLargeImage from "@/images/career catalyst-large.png";
@@ -41,6 +41,8 @@ import SponsorsLargeImage from "@/images/sponsors-large.png";
 import CareerCatalystImage from "@/images/career-catalyst-fix.png";
 import IdontKnowImage from "@/images/idontknow.png";
 import GCXCIImage from "@/images/gc-x-ci.png";
+import TiktokImage from "@/images/tiktok.png";
+import YtImage from "@/images/yt.png";
 
 // SVG
 import CoperSVG from "@/svg/coper.svg";
@@ -1998,7 +2000,19 @@ export default function Home() {
       </section>
       {/* END: Section 13 */}
       {/* BEGIN: Section 14 */}
-      <section className={cn(["pt-8 px-4", "desktop:hidden"])}>
+      <section
+        className={cn([
+          "pt-8 px-4",
+          // Mobile
+          // Mobile XL
+          // Tab
+          "tab:hidden",
+          // Tab XL
+          // Laptop
+          // Laptop XL
+          // Desktop
+        ])}
+      >
         <div className="relative w-[187px] h-[63px] mb-6">
           <Image
             alt="logo-generasi-cakap"
@@ -2012,14 +2026,20 @@ export default function Home() {
             "text-sm text-neutral-900 font-bold",
           ])}
         >
-          Contact Us
+          Hubungi kami
         </p>
-        <div className="flex gap-x-3 my-4">
+        <div className="flex gap-x-3 my-4 items-center">
           <div className="relative w-9 h-9">
             <Image alt="instagram" src={InstagramImage} layout="fill" />
           </div>
           <div className="relative w-9 h-9">
             <Image alt="linkedin" src={LinkedinImage} layout="fill" />
+          </div>
+          <div className="relative w-9 h-9">
+            <Image alt="tiktok" src={TiktokImage} layout="fill" />
+          </div>
+          <div className="relative w-9 h-7">
+            <Image alt="youtube" src={YtImage} layout="fill" />
           </div>
         </div>
         <p className={cn([mulish.className, "text-primary font-bold text-sm"])}>
@@ -2031,15 +2051,15 @@ export default function Home() {
       {/* BEGIN: Section 15 */}
       <section
         className={cn([
-          "px-4",
+          "px-4 mb-[77px]",
           // Mobile
           // Mobile XL
           // Tab
+          "tab:hidden",
           // Tab XL
           // Laptop
           // Laptop XL
           // Desktop
-          "desktop:hidden",
         ])}
       >
         <p
@@ -2053,11 +2073,9 @@ export default function Home() {
             // Laptop
             // Laptop XL
             // Desktop
-            "desktop:text-xl desktop:font-semibold",
           ])}
         >
-          Jalan Semarang No. 17, Antapani Kidul, Kec. Antapani, Kota Bandung
-          40291
+          Antapani Kidul, Kec. Antapani, Kota Bandung 40291asdad
         </p>
         <div
           className={cn([
@@ -2070,7 +2088,6 @@ export default function Home() {
             // Laptop
             // Laptop XL
             // Desktop
-            "desktop:text-xl desktop:font-semibold",
           ])}
         >
           <p>Jam Operasional :</p>
@@ -2099,11 +2116,37 @@ export default function Home() {
       <section
         className={cn([
           "hidden",
+          // Mobile
+          // Mobile XL
+          // Tab
+          "tab:px-[20px] tab:py-16 tab:flex tab:justify-between laptop:bg-[#F8FAFC]",
+          // Tab XL
+          "tab-xl:px-[90px] tab-xl:py-16 tab-xl:flex tab-xl:justify-between laptop:bg-[#F8FAFC]",
+          // Laptop
+          "laptop:px-[132px] laptop:py-16 laptop:flex laptop:justify-between laptop:bg-[#F8FAFC]",
+          // Laptop XL
+          "laptop-xl:px-[132px] laptop-xl:py-16 laptop-xl:flex laptop-xl:justify-between laptop-xl:bg-[#F8FAFC]",
+          // Desktop
           "desktop:px-[132px] desktop:py-16 desktop:flex desktop:justify-between desktop:bg-[#F8FAFC]",
         ])}
       >
-        <div className="desktop:max-w-[472px]">
-          <div className="relative w-[187px] h-[63px] mb-6">
+        <div
+          className={cn([
+            // Mobile
+            // Mobile XL
+            // Tab
+            "tab:max-w-[352px]",
+            // Tab XL
+            "tab-xl:max-w-[372px]",
+            // Laptop
+            "laptop:max-w-[472px]",
+            // Laptop XL
+            "laptop-xl:max-w-[472px]",
+            // Desktop
+            "desktop:max-w-[472px]",
+          ])}
+        >
+          <div className="relative w-[187px] h-[63px] mb-10">
             <Image
               alt="logo-generasi-cakap"
               src={LogoGenerasiCakapBigImage}
@@ -2114,16 +2157,37 @@ export default function Home() {
             className={cn([
               mulish.className,
               "text-neutral-700 text-sm",
+              // Mobile
+              // Mobile XL
+              // Tab
+              "tab:text-base tab:font-semibold",
+              // Tab XL
+              "tab-xl:text-base tab-xl:font-semibold",
+              // Laptop
+              "laptop:text-xl laptop:font-semibold",
+              // Laptop XL
+              "laptop-xl:text-xl laptop-xl:font-semibold",
+              // Desktop
               "desktop:text-xl desktop:font-semibold",
             ])}
           >
-            Jalan Semarang No. 17, Antapani Kidul, Kec. Antapani, Kota Bandung
-            40291
+            Antapani Kidul, Kec. Antapani, Kota Bandung 40291
           </p>
           <div
             className={cn([
               mulish.className,
               "text-neutral-700 text-sm my-4",
+              // Mobile
+              // Mobile XL
+              // Tab
+              "tab:text-base tab:font-semibold",
+              // Tab XL
+              "tab-xl:text-base tab-xl:font-semibold",
+              // Laptop
+              "laptop:text-xl laptop:font-semibold",
+              // Laptop XL
+              "laptop-xl:text-xl laptop-xl:font-semibold",
+              // Desktop
               "desktop:text-xl desktop:font-semibold",
             ])}
           >
@@ -2135,6 +2199,17 @@ export default function Home() {
             className={cn([
               mulish.className,
               "text-neutral-800 text-xs font-semibold",
+              // Mobile
+              // Mobile XL
+              // Tab
+              "tab:text-base",
+              // Tab XL
+              "tab-xl:text-base",
+              // Laptop
+              "laptop:text-xl",
+              // Laptop XL
+              "laptop-xl:text-xl",
+              // Desktop
               "desktop:text-xl",
             ])}
           >
@@ -2145,6 +2220,17 @@ export default function Home() {
           <p
             className={cn([
               mulish.className,
+              // Mobile
+              // Mobile XL
+              // Tab
+              "tab:text-xl tab:text-neutral-900 tab:font-bold tab:uppercase tab:text-right",
+              // Tab XL
+              "tab-xl:text-xl tab-xl:text-neutral-900 tab-xl:font-bold tab-xl:uppercase tab-xl:text-right",
+              // Laptop
+              "laptop:text-2xl laptop:text-neutral-900 laptop:font-bold laptop:uppercase laptop:text-right",
+              // Laptop XL
+              "laptop-xl:text-2xl laptop-xl:text-neutral-900 laptop-xl:font-bold laptop-xl:uppercase laptop-xl:text-right",
+              // Desktop
               "desktop:text-2xl desktop:text-neutral-900 desktop:font-bold desktop:uppercase desktop:text-right",
             ])}
           >
@@ -2152,20 +2238,48 @@ export default function Home() {
           </p>
           <div
             className={cn([
-              "desktop:flex desktop:gap-x-3 desktop:my-9 desktop:justify-end",
+              // Mobile
+              // Mobile XL
+              // Tab
+              "tab:flex tab:gap-x-2 tab:my-9 tab:justify-end tab:items-center",
+              // Tab XL
+              "tab-xl:flex tab-xl:gap-x-2 tab-xl:my-9 tab-xl:justify-end tab-xl:items-center",
+              // Laptop
+              "laptop:flex laptop:gap-x-3 laptop:my-9 laptop:justify-end laptop:items-center",
+              // Laptop XL
+              "laptop-xl:flex laptop-xl:gap-x-3 laptop-xl:my-9 laptop-xl:justify-end laptop-xl:items-center",
+              // Desktop
+              "desktop:flex desktop:gap-x-3 desktop:my-9 desktop:justify-end desktop:items-center",
             ])}
           >
-            <div className="relative w-9 h-9">
+            <div className="relative w-12 h-12">
               <Image alt="instagram" src={InstagramImage} layout="fill" />
             </div>
-            <div className="relative w-9 h-9">
+            <div className="relative w-12 h-12">
               <Image alt="linkedin" src={LinkedinImage} layout="fill" />
+            </div>
+            <div className="relative w-12 h-12">
+              <Image alt="tiktok" src={TiktokImage} layout="fill" />
+            </div>
+            <div className="relative w-12 h-9">
+              <Image alt="youtube" src={YtImage} layout="fill" />
             </div>
           </div>
           <p
             className={cn([
               mulish.className,
               "text-primary font-bold",
+              // Mobile
+              // Mobile XL
+              // Tab
+              "tab:text-base",
+              // Tab XL
+              "tab-xl:text-base",
+              // Laptop
+              "laptop:text-xl",
+              // Laptop XL
+              "laptop-xl:text-xl",
+              // Desktop
               "desktop:text-xl",
             ])}
           >
