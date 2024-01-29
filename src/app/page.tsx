@@ -1909,19 +1909,47 @@ export default function Home() {
       </section>
       {/* END: Section 12 */}
       {/* BEGIN: Section 13 */}
-      <section className={cn(["py-[46px] px-1", "desktop:px-[240px]"])}>
+      <section
+        className={cn([
+          "py-[46px] px-1",
+          // Mobile
+          // Mobile XL
+          // Tab
+          "tab:px-10",
+          // Tab XL
+          // Laptop
+          "laptop:px-20",
+          // Laptop XL
+          // Desktop
+          "desktop:px-32",
+        ])}
+      >
         <h2
           className={cn([
             "text-primary uppercase font-bold text-center mb-6",
+            // Mobile
+            // Mobile XL
+            // Tab
             "tab:text-[35px]",
+            // Tab XL
+            // Laptop
+            // Laptop XL
+            // Desktop
             "desktop:text-[52px] desktop:px-[270px] desktop:leading-[72px]",
           ])}
         >
-          Our Partner and collaborator
+          Partner dan kolaborator kami
         </h2>
         <p
           className={cn(
             "hidden",
+            // Mobile
+            // Mobile XL
+            // Tab
+            // Tab XL
+            // Laptop
+            // Laptop XL
+            // Desktop
             "desktop:block desktop:px-[270px] desktop:text-center"
           )}
         >
@@ -1932,16 +1960,36 @@ export default function Home() {
         </p>
         <div
           className={cn([
-            "relative w-[322px] h-[132px] mt-8 mx-auto mb-6",
-            "tab:w-[572px] tab:h-[282px] tab:mt-8 tab:mx-auto tab:mb-6",
-            "desktop:hidden",
+            "relative  mt-8 mx-auto mb-6",
+            // Mobile
+            "w-[330px] h-[219px]",
+            // Mobile XL
+            "mobile-xl:w-[400px] mobile-xl:h-[258px]",
+            // Tab
+            "tab:hidden",
+            // "tab:w-[572px] tab:h-[282px] tab:mt-8 tab:mx-auto tab:mb-6",
+            // Tab XL
+            // Laptop
+            // Laptop XL
+            // Desktop
           ])}
         >
-          <Image alt="sponsors" src={SponsorsImage} layout="fill" />
+          <Image alt="sponsors" src={SponsorsLargeImage} layout="fill" />
         </div>
         <div
           className={cn([
             "hidden",
+            // Mobile
+            // Mobile XL
+            // Tab
+            "tab:relative tab:w-[620px] tab:h-[353px] tab:mx-auto tab:mb-6 tab:block tab:mt-20",
+            // Tab XL
+            "tab-xl:relative tab-xl:w-[650px] tab-xl:h-[418px] tab-xl:mx-auto tab-xl:mb-6 tab-xl:block tab-xl:mt-20",
+            // Laptop
+            "laptop:relative laptop:w-[880px] laptop:h-[565px] laptop:mx-auto laptop:mb-6 laptop:block laptop:mt-20",
+            // Laptop XL
+            "laptop-xl:relative laptop-xl:w-[900px] laptop-xl:h-[580px] laptop-xl:mx-auto laptop-xl:mb-6 laptop-xl:block laptop-xl:mt-20",
+            // Desktop
             "desktop:relative desktop:w-[1091px] desktop:h-[705px] desktop:mx-auto desktop:mb-6 desktop:block desktop:mt-20",
           ])}
         >
@@ -1981,11 +2029,30 @@ export default function Home() {
       </section>
       {/* END: Section 14 */}
       {/* BEGIN: Section 15 */}
-      <section className={cn(["px-4", "desktop:hidden"])}>
+      <section
+        className={cn([
+          "px-4",
+          // Mobile
+          // Mobile XL
+          // Tab
+          // Tab XL
+          // Laptop
+          // Laptop XL
+          // Desktop
+          "desktop:hidden",
+        ])}
+      >
         <p
           className={cn([
             mulish.className,
             "text-neutral-700 text-sm",
+            // Mobile
+            // Mobile XL
+            // Tab
+            // Tab XL
+            // Laptop
+            // Laptop XL
+            // Desktop
             "desktop:text-xl desktop:font-semibold",
           ])}
         >
@@ -1996,6 +2063,13 @@ export default function Home() {
           className={cn([
             mulish.className,
             "text-neutral-700 text-sm my-4",
+            // Mobile
+            // Mobile XL
+            // Tab
+            // Tab XL
+            // Laptop
+            // Laptop XL
+            // Desktop
             "desktop:text-xl desktop:font-semibold",
           ])}
         >
@@ -2007,6 +2081,13 @@ export default function Home() {
           className={cn([
             mulish.className,
             "text-neutral-800 text-xs font-semibold",
+            // Mobile
+            // Mobile XL
+            // Tab
+            // Tab XL
+            // Laptop
+            // Laptop XL
+            // Desktop
             "desktop:text-xl",
           ])}
         >
