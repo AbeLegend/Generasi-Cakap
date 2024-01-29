@@ -38,6 +38,8 @@ import TimelineDownSVG from "@/svg/timeline-down.svg";
 import CareerCatalystsLargeImage from "@/images/career catalyst-large.png";
 import CareerPathImage from "@/images/career-path.png";
 import SponsorsLargeImage from "@/images/sponsors-large.png";
+import CareerCatalystImage from "@/images/career-catalyst-fix.png";
+
 // SVG
 import CoperSVG from "@/svg/coper.svg";
 import MapPinSVG from "@/svg/map-pin.svg";
@@ -222,9 +224,19 @@ export default function Home() {
         {/*  */}
         <h2
           className={cn([
-            "text-primary font-bold text-center mb-4",
+            "text-primary font-bold text-center mb-4 uppercase",
+            // Mobile
+            "text-[24px]",
+            // Mobile XL
+            "mobile-xl:text-[25px]",
             // Tab
-            "tab:text-[25px]",
+            "tab:text-[28px]",
+            // Tab XL
+            "tab-xl:text-[30px] tab-xl:mb-6",
+            // Laptop
+            "laptop:text-[37px] laptop:mb-6",
+            // Laptop XL
+            "laptop-xl:text-[42px] laptop-xl:mb-6",
             // Desktop
             "desktop:text-[52px] desktop:mb-6",
           ])}
@@ -237,94 +249,49 @@ export default function Home() {
           className={cn([
             muli.className,
             "text-sm text-neutral-900 max-w-[290px] text-center mx-auto",
+            // Mobile
             "mb-[25px]",
+            // Mobile XL
+            // Tab
             "tab:max-w-[400px] tab:text-lg",
+            // Tab XL
+            "tab-xl:max-w-[500px] tab-xl:text-lg",
+            // Laptop
+            "laptop:max-w-[500px] laptop:text-lg",
+            // Laptop XL
+            "laptop-xl:max-w-[500px] laptop-xl:text-lg",
+            // Desktop
             "desktop:text-lg desktop:max-w-[524px]",
           ])}
         >
           GenerasiCakap hadir untuk membantumu menemukan karir terbaikmu dengan
           program:
         </p>
-        {/*  */}
-        {/* BEGIN: Career Catalyst */}
-        <div className="px-4">
-          <div
-            className={cn([
-              "relative h-[80px]",
-              "tab:w-[400px] tab:h-[100px] tab:mx-auto",
-              "desktop:hidden",
-            ])}
-          >
-            <Image
-              alt="Career Catalyst"
-              src={CareerCatalystsImage}
-              layout="fill"
-            />
-          </div>
-          <div
-            className={cn([
-              "relative hidden desktop:block",
-              "desktop:h-[214px] desktop:w-[747px] desktop:mx-auto desktop:mt-12",
-            ])}
-          >
-            <Image
-              alt="Career Catalyst"
-              src={CareerCatalystsLargeImage}
-              layout="fill"
-            />
-          </div>
-        </div>
-        {/* END: Career Catalyst */}
-        <p
+        <div
           className={cn([
-            "text-xs text-neutral-600 text-center mt-4 mb-2",
-            muli.className,
-            "tab:mt-10 tab:text-lg",
-            "desktop:text-lg",
+            "relative mx-auto",
+            // Mobile
+            "w-[320px] h-[176px]",
+            // Mobile XL
+            // Tab
+            "tab:w-[467px] tab:h-[257px]",
+            // Tab XL
+            "tab-xl:w-[467px] tab-xl:h-[257px]",
+            // Laptop
+            "laptop:w-[567px] laptop:h-[313px]",
+            // Laptop XL
+            "laptop-xl:w-[567px] laptop-xl:h-[313px]",
+            // Desktop
+            "desktop:w-[667px] desktop:h-[368px]",
           ])}
         >
-          In Collaboration
-        </p>
-        {/*  */}
-        <div className="flex justify-center gap-x-[11px] mb-6 items-center">
-          <div
-            className={cn([
-              "relative w-[108px] h-9",
-              "tab:w-[158px] tab:h-[52px]",
-              "desktop:w-[158px] desktop:h-[52px]",
-            ])}
-          >
-            <Image
-              alt="Generasi Cakap"
-              src={LogoGenerasiCakapImage}
-              layout="fill"
-            />
-          </div>
-          <p
-            className={cn([
-              muli.className,
-              "text-gc-body-1 font-semibold text-neutral-800",
-              "tab:text-[29px]",
-              "desktop:text-[29px]",
-            ])}
-          >
-            X
-          </p>
-          <div
-            className={cn([
-              "relative w-[128px] h-9",
-              "tab:w-[187px] tab:h-[36px]",
-              "desktop:w-[187px] desktop:h-[36px]",
-            ])}
-          >
-            <Image alt="Coaching" src={CareerCoachingImage} layout="fill" />
-          </div>
+          <Image alt="" src={CareerCatalystImage} layout="fill" />
         </div>
+
         <hr
           className={cn([
             "mx-16 bg-neutral-500 border-none h-[1px] mb-6",
             "tab:hidden",
-            "desktop:hidden",
           ])}
         />
         {/*  */}
