@@ -1584,21 +1584,69 @@ export default function Home() {
       <section
         className={cn([
           "px-4",
-          "desktop:grid desktop:grid-cols-8 desktop:px-[240px] desktop:py-[129px]",
+          // Mobile
+          // Mobile XL
+          // Tab
+          "tab:grid tab:grid-cols-8 tab:px-20 tab:py-[129px] tab:items-center",
+          // Tab XL
+          "tab-xl:grid tab-xl:grid-cols-8 tab-xl:px-20 tab-xl:py-[129px]",
+          // Laptop
+          "laptop:grid laptop:grid-cols-8 laptop:px-20 laptop:py-[129px]",
+          // Laptop XL
+          "laptop-xl:grid laptop-xl:grid-cols-8 laptop-xl:px-20 laptop-xl:py-[129px]",
+          // Desktop
+          "desktop:grid desktop:grid-cols-8 desktop:px-32 desktop:py-[129px]",
         ])}
       >
-        <div className={cn(["desktop:col-span-3"])}>
+        <div
+          className={cn([
+            // Mobile
+            // Mobile XL
+            // Tab
+            "tab:col-span-3",
+            // Tab XL
+            "tab-xl:col-span-3",
+            // Laptop
+            "laptop:col-span-3",
+            // Laptop XL
+            "laptop-xl:col-span-3",
+            // Desktop
+            "desktop:col-span-3",
+          ])}
+        >
           <h2
             className={cn([
               "text-primary font-bold text-center mt-16 uppercase",
-              "desktop:text-[42px] desktop:leading-[48px]",
+              // Mobile
+              // Mobile XL
+              // Tab
+              "tab:text-[23px] tab:leading-[28px]",
+              // Tab XL
+              "tab-xl:text-[23px] tab-xl:leading-[28px]",
+              // Laptop
+              "laptop:text-[33px] laptop:leading-[38px]",
+              // Laptop XL
+              "laptop-xl:text-[35px] laptop-xl:leading-[38px]",
+              // Desktop
+              "desktop:text-[37px] desktop:leading-[38px]",
             ])}
           >
-            Get SPECIAL PRICE FOR YOUR ORGANIZATION
+            DAPATKAN HARGA SPESIAL UNTUK ORGANISASI
           </h2>
           <h1
             className={cn([
               "hidden",
+              // Mobile
+              // Mobile XL
+              // Tab
+              "tab:block tab:text-[25px] tab:uppercase tab:text-neutral-600 tab:font-bold tab:text-center tab:my-5",
+              // Tab XL
+              "tab-xl:block tab-xl:text-[30px] tab-xl:uppercase tab-xl:text-neutral-600 tab-xl:font-bold tab-xl:text-center tab-xl:my-4",
+              // Laptop
+              "laptop:block laptop:text-[40px] laptop:uppercase laptop:text-neutral-600 laptop:font-bold laptop:text-center laptop:my-11",
+              // Laptop XL
+              "laptop-xl:block laptop-xl:text-[45px] laptop-xl:uppercase laptop-xl:text-neutral-600 laptop-xl:font-bold laptop-xl:text-center laptop-xl:my-11",
+              // Desktop
               "desktop:block desktop:text-[52px] desktop:uppercase desktop:text-neutral-600 desktop:font-bold desktop:text-center desktop:my-11",
             ])}
           >
@@ -1606,7 +1654,21 @@ export default function Home() {
           </h1>
           <Button
             mode="secondary"
-            className="hidden desktop:uppercase desktop:block desktop:py-4 desktop:text-2xl desktop:rounded-lg"
+            className={cn([
+              "hidden",
+              // Mobile
+              // Mobile XL
+              // Tab
+              "tab:uppercase tab:block tab:py-4 tab:text-base tab:rounded-lg",
+              // Tab XL
+              "tab-xl:uppercase tab-xl:block tab-xl:py-4 tab-xl:text-lg tab-xl:rounded-lg",
+              // Laptop
+              "laptop:uppercase laptop:block laptop:py-4 laptop:text-xl laptop:rounded-lg",
+              // Laptop XL
+              "laptop-xl:uppercase laptop-xl:block laptop-xl:py-4 laptop-xl:text-2xl laptop-xl:rounded-lg",
+              // Desktop
+              "desktop:uppercase desktop:block desktop:py-4 desktop:text-2xl desktop:rounded-lg",
+            ])}
           >
             Cek Paket Organisasi
           </Button>
@@ -1614,15 +1676,51 @@ export default function Home() {
         <div
           className={cn([
             "relative w-[309px] h-[166px] mx-auto my-6",
+            // Mobile
+            // Mobile XL
+            // Tab
+            "tab:col-span-5 tab:w-[440px] tab:h-[224px]",
+            // Tab XL
+            "tab-xl:col-span-5 tab-xl:w-[480px] tab-xl:h-[257px]",
+            // Laptop
+            "laptop:col-span-5 laptop:w-[600px] laptop:h-[322px]",
+            // Laptop XL
+            "laptop-xl:col-span-5 laptop-xl:w-[687px] laptop-xl:h-[369px]",
+            // Desktop
             "desktop:col-span-5 desktop:w-[687px] desktop:h-[369px]",
           ])}
         >
           <Image alt="company-pana" src={CompanyImage} layout="fill" />
         </div>
-        <h1 className="uppercase text-primary font-bold text-center mb-6 desktop:hidden">
+        <h1
+          className={cn([
+            "uppercase text-primary font-bold text-center mb-6",
+            // Mobile
+            // Mobile XL
+            // Tab
+            "tab:hidden",
+            // Tab XL
+            // Laptop
+            // Laptop XL
+            // Desktop
+          ])}
+        >
           min. 15 pax
         </h1>
-        <Button mode="secondary" className="uppercase mb-16 desktop:hidden">
+        <Button
+          mode="secondary"
+          className={cn([
+            "uppercase mb-16",
+            // Mobile
+            // Mobile XL
+            // Tab
+            "tab:hidden",
+            // Tab XL
+            // Laptop
+            // Laptop XL
+            // Desktop
+          ])}
+        >
           Cek Paket Organisasi
         </Button>
       </section>
