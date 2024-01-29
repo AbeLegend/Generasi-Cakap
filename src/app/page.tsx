@@ -1338,42 +1338,138 @@ export default function Home() {
       <section
         className={cn([
           "px-4 mt-14 bg-primary relative pt-8 z-0",
-          "desktop:px-[240px] desktop:grid desktop:grid-cols-8 desktop:gap-x-[116px]",
+          // Mobile
+          // Mobile XL
+          // Tab
+          "tab:px-20 tab:grid tab:grid-cols-8 tab:gap-x-[45px]",
+          // Tab XL
+          "tab-xl:px-20 tab-xl:grid tab-xl:grid-cols-8 tab-xl:gap-x-[85px]",
+          // Laptop
+          "laptop:px-20 laptop:grid laptop:grid-cols-8 laptop:gap-x-[116px]",
+          // Laptop XL
+          "laptop-xl:px-20 laptop-xl:grid laptop-xl:grid-cols-8 laptop-xl:gap-x-[116px]",
+          // Desktop
+          "desktop:px-32 desktop:grid desktop:grid-cols-8 desktop:gap-x-[116px]",
         ])}
       >
         <div
           className={cn([
+            // Mobile
+            // Mobile XL
+            // Tab
+            "tab:flex tab:flex-col tab:justify-center tab:col-span-4 tab:items-center",
+            // Tab XL
+            "tab-xl:flex tab-xl:flex-col tab-xl:justify-center tab-xl:col-span-4 tab-xl:items-center",
+            // Laptop
+            "laptop:flex laptop:flex-col laptop:justify-center laptop:col-span-4 laptop:items-center",
+            // Laptop XL
+            "laptop-xl:flex laptop-xl:flex-col laptop-xl:justify-center laptop-xl:col-span-4 laptop-xl:items-center",
+            // Desktop
             "desktop:flex desktop:flex-col desktop:justify-center desktop:col-span-4 desktop:items-center",
           ])}
         >
           <h2
             className={cn([
               "text-neutral-100 text-center font-bold px-[38px]",
-              "desktop:text-[52px] desktop:max-w-[556px] desktop:leading-[72px] desktop:px-0",
+              // Mobile
+              // Mobile XL
+              // Tab
+              "tab:text-[22px] tab:max-w-[556px] tab:leading-[32px] tab:px-0",
+              // Tab XL
+              "tab-xl:text-[32px] tab-xl:max-w-[556px] tab-xl:leading-[52px] tab-xl:px-0",
+              // Laptop
+              "laptop:text-[42px] laptop:max-w-[556px] laptop:leading-[72px] laptop:px-0",
+              // Laptop XL
+              "laptop-xl:text-[42px] laptop-xl:max-w-[556px] laptop-xl:leading-[72px] laptop-xl:px-0",
+              // Desktop
+              "desktop:text-[42px] desktop:max-w-[556px] desktop:leading-[72px] desktop:px-0",
             ])}
           >
-            READY TO FIND YOUR CAREER PATH?
+            SIAP MENEMUKAN JALAN KARIRMU?
           </h2>
           <div
             className={cn([
               "hidden",
+              // Mobile
+              // Mobile XL
+              // Tab
+              "tab:block tab:relative tab:w-[300px] tab:h-[276px]",
+              // Tab XL
+              "tab-xl:block tab-xl:relative tab-xl:w-[408px] tab-xl:h-[379px]",
+              // Laptop
+              "laptop:block laptop:relative laptop:w-[448px] laptop:h-[409px]",
+              // Laptop XL
+              "laptop-xl:block laptop-xl:relative laptop-xl:w-[448px] laptop-xl:h-[409px]",
+              // Desktop
               "desktop:block desktop:relative desktop:w-[448px] desktop:h-[409px]",
             ])}
           >
             <Image alt="career-path" src={CareerPathImage} layout="fill" />
           </div>
         </div>
-        <div className="desktop:col-span-4 desktop:self-center">
-          <div className="desktop:max-w-[430px] ">
+        <div
+          className={cn([
+            // Mobile
+            // Mobile XL
+            // Tab
+            "tab:col-span-4 tab-xl:self-center",
+            // Tab XL
+            "tab-xl:col-span-4 tab-xl:self-center",
+            // Laptop
+            "laptop:col-span-4 laptop:self-center",
+            // Laptop XL
+            "laptop-xl:col-span-4 laptop-xl:self-center",
+            // Desktop
+            "desktop:col-span-4 desktop:self-center",
+          ])}
+        >
+          <div
+            className={cn([
+              // Mobile
+              // Mobile XL
+              // Tab
+              "tab:max-w-[250px]",
+              // Tab XL
+              "tab-xl:max-w-[400px]",
+              // Laptop
+              "laptop:max-w-[430px]",
+              // Laptop XL
+              "laptop-xl:max-w-[430px]",
+              // Desktop
+              "desktop:max-w-[430px]",
+            ])}
+          >
             <div
               className={cn([
                 "bg-[#025F99] p-4 rounded-2xl mt-6 mb-8",
+                // Mobile
+                // Mobile XL
+                // Tab
+                "tab:w-full tab:mx-auto tab:mb-6 tab:py-6",
+                // Tab XL
+                "tab-xl:w-full tab-xl:mx-auto tab-xl:mb-6 tab-xl:py-6",
+                // Laptop
+                "laptop:w-full laptop:mx-auto laptop:mb-6 laptop:py-6",
+                // Laptop XL
+                "laptop-xl:w-full laptop-xl:mx-auto laptop-xl:mb-6 laptop-xl:py-6",
+                // Desktop
                 "desktop:w-full desktop:mx-auto desktop:mb-6 desktop:py-6",
               ])}
             >
               <h2
                 className={cn([
                   "text-secondary-border font-bold text-center",
+                  // Mobile
+                  // Mobile XL
+                  // Tab
+                  "tab:text-[20px]",
+                  // Tab XL
+                  "tab-xl:text-[28px]",
+                  // Laptop
+                  "laptop:text-[32px]",
+                  // Laptop XL
+                  "laptop-xl:text-[32px]",
+                  // Desktop
                   "desktop:text-[32px]",
                 ])}
               >
@@ -1382,14 +1478,37 @@ export default function Home() {
               <p
                 className={cn([
                   "text-base text-neutral-100 text-center",
+
+                  // Mobile
+                  // Mobile XL
+                  // Tab
+                  "tab:text-base tab:mt-2 tab:mb-10",
+                  // Tab XL
+                  "tab-xl:text-xl tab-xl:mt-2 tab-xl:mb-10",
+                  // Laptop
+                  "laptop:text-2xl laptop:mt-2 laptop:mb-14",
+                  // Laptop XL
+                  "laptop-xl:text-2xl laptop-xl:mt-2 laptop-xl:mb-14",
+                  // Desktop
                   "desktop:text-2xl desktop:mt-2 desktop:mb-14",
                 ])}
               >
-                Full Program (2 Months)
+                Biaya Full Program (2 Bulan)
               </p>
               <h1
                 className={cn([
                   "text-[102px] font-bold text-center text-neutral-100 my-[34px]",
+                  // Mobile
+                  // Mobile XL
+                  // Tab
+                  "tab:text-[90px] tab:mb-16",
+                  // Tab XL
+                  "tab-xl:text-[114px] tab-xl:mb-16",
+                  // Laptop
+                  "laptop:text-[134px] laptop:mb-16",
+                  // Laptop XL
+                  "laptop-xl:text-[154px] laptop-xl:mb-16",
+                  // Desktop
                   "desktop:text-[174px] desktop:mb-16",
                 ])}
               >
@@ -1400,9 +1519,21 @@ export default function Home() {
                 className={cn([
                   muli.className,
                   "text-sm text-neutral-100",
+                  // Mobile
+                  // Mobile XL
+                  // Tab
+                  "tab:grid tab:gap-y-1",
+                  // Tab XL
+                  "tab-xl:grid tab-xl:gap-y-4",
+                  // Laptop
+                  "laptop:grid laptop:gap-y-4",
+                  // Laptop XL
+                  "laptop-xl:grid laptop-xl:gap-y-4",
+                  // Desktop
                   "desktop:grid desktop:gap-y-4",
                 ])}
               >
+                <li className="flex gap-x-2">Kamu akan mendapatkan:</li>
                 <li className="flex gap-x-2">
                   <CircleCheckWhiteSVG /> 4x kelas online
                 </li>
@@ -1423,6 +1554,17 @@ export default function Home() {
               mode="primary"
               className={cn([
                 "mb-[29px] uppercase",
+                // Mobile
+                // Mobile XL
+                // Tab
+                "tab:text-xl tab:py-4",
+                // Tab XL
+                "tab-xl:text-xl tab-xl:py-4",
+                // Laptop
+                "laptop:text-xl laptop:py-4",
+                // Laptop XL
+                "laptop-xl:text-2xl laptop-xl:py-4",
+                // Desktop
                 "desktop:text-2xl desktop:py-4",
               ])}
             >
