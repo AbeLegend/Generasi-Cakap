@@ -367,7 +367,7 @@ export default function Home() {
             ])}
           >
             Dalam Career Catalyst, sebuah intensif pengembangan karir selama 2
-            bulan degan tujuan membimbing #TemanCakap dalam merancang blueprint
+            bulan dengan tujuan membimbing #TemanCakap dalam merancang blueprint
             karir yang sukses dan rencana untuk memetakan perkembangan diri dan
             karir. Program ini cocok untuk kamu yang:
           </p>
@@ -1969,10 +1969,10 @@ export default function Home() {
             // Desktop
           ])}
         >
-          Generasi Cakap merupakan start-up psikologi & edukasi (psiedukasi)
-          yang berfokus dalam pengembangan diri dan program untuk membangun
-          dukungan sosial psikologis bagi generasi usia produktif dalam
-          mengembangkan diri di dunia karir.
+          GenerasiCakap merupakan start-up psikologi & edukasi (psiedukasi) yang
+          berfokus dalam pengembangan diri dan program untuk membangun dukungan
+          sosial psikologis bagi generasi usia produktif dalam mengembangkan
+          diri di dunia karir.
           <br />
           <br />
           Melalui program edukasi, riset dan pengembangan serta pendampingan
@@ -1980,7 +1980,7 @@ export default function Home() {
           manajemen talenta, pelatihan dan pengembangan karyawan,dll.
           <br />
           <br />
-          Saat ini, Generasi Cakap berada di bawah naungan Yayasan Generasi
+          Saat ini, GenerasiCakap berada di bawah naungan Yayasan Generasi
           Cahaya Kebaikan yang didirikan berdasarkan hukum negara Republik
           Indonesia.
         </p>
@@ -2196,7 +2196,7 @@ export default function Home() {
             "desktop:text-xl",
           ])}
         >
-          © 2023 Generasi Cakap. All rights reserved.
+          © 2023 GenerasiCakap. All rights reserved.
         </p>
       </section>
       {/* END: Section 15 */}
@@ -2301,7 +2301,7 @@ export default function Home() {
               "desktop:text-xl",
             ])}
           >
-            © 2023 Generasi Cakap. All rights reserved.
+            © 2023 GenerasiCakap. All rights reserved.
           </p>
         </div>
         <div>
