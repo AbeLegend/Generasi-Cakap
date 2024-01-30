@@ -6,8 +6,8 @@ import "./globals.css";
 import { figtree } from "@/lib";
 
 export const metadata: Metadata = {
-  title: "Generasi Cakap",
-  description: "Website Generasi Cakap",
+  title: "GenerasiCakap",
+  description: "Website GenerasiCakap",
 };
 
 export default function RootLayout({

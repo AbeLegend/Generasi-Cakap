@@ -1,27 +1,51 @@
 interface FAQItem {
   question: string;
-  answer: string;
+  answer: Array<string>;
 }
 const FAQData: Array<FAQItem> = [
   {
-    question: "Bagaimana cara daftar konseling bersama psikolog Generasi Cakap?",
-    answer: "Tidak bisa. Pembayaran hanya dapat dilakukan via transfer dengan nomer rekening yang sudah diarahkan oleh Admin Helpdesk kami",
+    question: "Apakah program Career Catalyst itu?",
+    answer: [
+      "Career Catalyst merupakan program intensif pengembangan diri dan karir, dilakukan selama 2 (dua) bulan, berupa kelas online pembelajaran dan pendampingan bersama Coach Professional dari GenerasiCakap dan Coaching Indonesia. <br/> Program ini bertujuan membantu #TemanCakap untuk mengenali identitas diri, kejelasan hidup<i>(clarity)</i> dan merancang pemetaan<i>(blueprint)</i> karir yang sukses, terencana dan penuh makna."
+    ],
   },
   {
-    question: "Bagaimana cara daftar konseling bersama psikolog Generasi Cakap?",
-    answer: "Tidak bisa. Pembayaran hanya dapat dilakukan via transfer dengan nomer rekening yang sudah diarahkan oleh Admin Helpdesk kami",
+    question: "Apakah pelaksanaan program Career Catalyst dilaksanakan secara online?",
+    answer: ["Betul sekali, Career Catalyst dilaksanakan secara online yaaa. Dilakukan dengan metode pembelajaran <i>synchronous</i> dan <i>asynchronous.</i>"],
   },
   {
-    question: "Bagaimana cara daftar konseling bersama psikolog Generasi Cakap?",
-    answer: "Tidak bisa. Pembayaran hanya dapat dilakukan via transfer dengan nomer rekening yang sudah diarahkan oleh Admin Helpdesk kami",
+    question: "Benefit apa saya yang didapatkan?",
+    answer: [
+      "E- Certificate",
+      "4x kelas online",
+      "3x one-on-one coaching",
+      "Networking dengan coach",
+      "Accountability partner"
+    ],
   },
   {
-    question: "Bagaimana cara daftar konseling bersama psikolog Generasi Cakap?",
-    answer: "Tidak bisa. Pembayaran hanya dapat dilakukan via transfer dengan nomer rekening yang sudah diarahkan oleh Admin Helpdesk kami",
+    question: "Bagaimana cara mendaftar program Career Catalyst?",
+    answer: ["Kamu dapat menghubungi WhatsApp Admin (+62) 819-3007-3538.<br/>Yuk segera daftarkan dirimu!"],
   },
   {
-    question: "Bagaimana cara daftar konseling bersama psikolog Generasi Cakap?",
-    answer: "Tidak bisa. Pembayaran hanya dapat dilakukan via transfer dengan nomer rekening yang sudah diarahkan oleh Admin Helpdesk kami",
+    question: "Tanggal berapa batas waktu pendaftaran program Career Catalyst?",
+    answer: ["Batas pendaftaran program Career Catalyst mulai tanggal 01 Februari - 16 Februari 2024."],
+  },
+  {
+    question: "Berapa Investasi untuk Program Career Catalyst?",
+    answer: ["159K per bulan atau hanya 318K selama program berlangsung."],
+  },
+  {
+    question: "Apakah tersedia metode pembayaran cicilan?",
+    answer: ["Bisa banget. #TemanCakap bisa menghubungi WhatsApp Admin (+62) 819-3007-3538"],
+  },
+  {
+    question: "Jika perusahaan saya ingin mengikuti program Career Catalyst, bagaimana caranya?",
+    answer: ["Mudah sekali! Daftarkan segera organisasi kamu dengan ketentuan, setiap organisasi dapat mengikutsertakan peserta minimal.15 orang yaa! Kontak Admin GenerasiCakap yaa!"],
+  },
+  {
+    question: "Jika saya ingin bertanya lebih detail terkait dengan program Career Catalyst, kontak mana yang dapat saya hubungi?",
+    answer: ["Untuk mendapatkan informasi lebih detail terkait program Career Catalyst, kamu dapat menghubungi WhatsApp Admin (+62) 819-3007-3538 yaa"],
   },
 ]
 

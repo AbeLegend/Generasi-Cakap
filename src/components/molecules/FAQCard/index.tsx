@@ -9,7 +9,7 @@ import { Icon } from "@/components/atoms";
 // type
 interface FAQCardProps {
   question: string;
-  answer: string;
+  answer: Array<string>;
   className?: string;
 }
 
@@ -22,9 +22,10 @@ const FAQCard: FC<FAQCardProps> = ({ question, answer, className }) => {
       {/* BEGIN: Question */}
       <div
         className={cn([
-          "px-4 py-3 flex justify-between items-center",
+          "px-4 py-3 flex justify-between items-center cursor-pointer",
           isOpen && "border-b border-b-[#99CEF0]",
         ])}
+        onClick={() => setIsOpen(!isOpen)}
       >
         <p
           className={cn([
@@ -38,16 +39,31 @@ const FAQCard: FC<FAQCardProps> = ({ question, answer, className }) => {
           name={isOpen ? "chevron-up" : "chevron-down"}
           size={24}
           color="#0173BA"
-          onClick={() => setIsOpen(!isOpen)}
         />
       </div>
       {/* END: Question */}
       {/* BEGIN: Answer */}
       {isOpen && (
         <div className="bg-neutral-100 px-4 py-3 rounded-b-lg">
-          <p className={cn([mulish.className, "text-neutral-700 text-sm"])}>
-            {answer}
-          </p>
+          <ul className={answer.length > 1 ? "list-disc" : ""}>
+            {answer.map((item, index) => {
+              return (
+                <li
+                  key={index}
+                  className={cn([
+                    mulish.className,
+                    "text-neutral-700 text-sm",
+                    answer.length > 1 && "flex gap-x-2 items-center",
+                  ])}
+                >
+                  {answer.length > 1 && (
+                    <span className="inline-block w-[5px] h-[5px] rounded-full bg-black" />
+                  )}
+                  <span dangerouslySetInnerHTML={{ __html: item }}></span>
+                </li>
+              );
+            })}
+          </ul>
         </div>
       )}
       {/* END: Answer */}
