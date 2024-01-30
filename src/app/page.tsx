@@ -165,7 +165,7 @@ export default function Home() {
             ])}
             onClick={() =>
               handleWhatsAppClick(
-                "Hallo MinJi GenerasiCakap!%0ASaya mau daftar program.."
+                "Hallo MinJi GenerasiCakap!<br>Saya mau daftar program.."
               )
             }
           >
@@ -1735,7 +1735,7 @@ export default function Home() {
             ])}
             onClick={() =>
               handleWhatsAppClick(
-                "Hallo MinJi GenerasiCakap!%0ASaya mau daftar program.."
+                "Hallo MinJi GenerasiCakap!<br>Saya mau daftar program.."
               )
             }
           >
@@ -1791,7 +1791,7 @@ export default function Home() {
           ])}
           onClick={() =>
             handleWhatsAppClick(
-              "Hallo MinJi GenerasiCakap!%0ASaya mau daftar program.."
+              "Hallo MinJi GenerasiCakap!<br>Saya mau daftar program.."
             )
           }
         >
