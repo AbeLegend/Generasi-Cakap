@@ -14,7 +14,18 @@ import {
 
 // local
 import { Button, Card } from "@/components/atoms";
-import { FAQData, TimelineData, cn, muli, mulish } from "@/lib";
+import {
+  FAQData,
+  TimelineData,
+  cn,
+  handleWhatsAppClick,
+  linkInstagram,
+  linkLinkedin,
+  linkTiktok,
+  linkYoutube,
+  muli,
+  mulish,
+} from "@/lib";
 import { Navbar } from "@/components/templates";
 import { FAQCard, ProfileCard, TimelineCard } from "@/components/molecules";
 // Image
@@ -152,6 +163,11 @@ export default function Home() {
               // Desktop
               "desktop:w-[80%]",
             ])}
+            onClick={() =>
+              handleWhatsAppClick(
+                "Hallo MinJi GenerasiCakap!%0ASaya mau daftar program.."
+              )
+            }
           >
             Daftar Sekarang
           </Button>
@@ -1717,6 +1733,11 @@ export default function Home() {
               // Desktop
               "desktop:uppercase desktop:block desktop:py-4 desktop:text-2xl desktop:rounded-lg",
             ])}
+            onClick={() =>
+              handleWhatsAppClick(
+                "Hallo MinJi GenerasiCakap!%0ASaya mau daftar program.."
+              )
+            }
           >
             Cek Paket Organisasi
           </Button>
@@ -1768,6 +1789,11 @@ export default function Home() {
             // Laptop XL
             // Desktop
           ])}
+          onClick={() =>
+            handleWhatsAppClick(
+              "Hallo MinJi GenerasiCakap!%0ASaya mau daftar program.."
+            )
+          }
         >
           Cek Paket Organisasi
         </Button>
@@ -2074,16 +2100,28 @@ export default function Home() {
           Hubungi kami
         </p>
         <div className="flex gap-x-3 my-4 items-center">
-          <div className="relative w-9 h-9">
+          <div
+            className="relative cursor-pointer w-9 h-9"
+            onClick={() => window.open(linkInstagram, "_blank")}
+          >
             <Image alt="instagram" src={InstagramImage} layout="fill" />
           </div>
-          <div className="relative w-9 h-9">
+          <div
+            className="relative cursor-pointer w-9 h-9"
+            onClick={() => window.open(linkLinkedin, "_blank")}
+          >
             <Image alt="linkedin" src={LinkedinImage} layout="fill" />
           </div>
-          <div className="relative w-9 h-9">
+          <div
+            className="relative cursor-pointer w-9 h-9"
+            onClick={() => window.open(linkTiktok, "_blank")}
+          >
             <Image alt="tiktok" src={TiktokImage} layout="fill" />
           </div>
-          <div className="relative w-9 h-7">
+          <div
+            className="relative cursor-pointer w-9 h-7"
+            onClick={() => window.open(linkYoutube, "_blank")}
+          >
             <Image alt="youtube" src={YtImage} layout="fill" />
           </div>
         </div>
@@ -2297,16 +2335,30 @@ export default function Home() {
               "desktop:flex desktop:gap-x-3 desktop:my-9 desktop:justify-end desktop:items-center",
             ])}
           >
-            <div className="relative w-12 h-12">
+            <div
+              className="relative cursor-pointer w-12 h-12"
+              onClick={() =>
+                window.open("https://www.instagram.com/generasicakap", "_blank")
+              }
+            >
               <Image alt="instagram" src={InstagramImage} layout="fill" />
             </div>
-            <div className="relative w-12 h-12">
+            <div
+              className="relative cursor-pointer w-12 h-12"
+              onClick={() => window.open(linkLinkedin, "_blank")}
+            >
               <Image alt="linkedin" src={LinkedinImage} layout="fill" />
             </div>
-            <div className="relative w-12 h-12">
+            <div
+              className="relative cursor-pointer w-12 h-12"
+              onClick={() => window.open(linkTiktok, "_blank")}
+            >
               <Image alt="tiktok" src={TiktokImage} layout="fill" />
             </div>
-            <div className="relative w-12 h-9">
+            <div
+              className="relative cursor-pointer w-12 h-9"
+              onClick={() => window.open(linkYoutube, "_blank")}
+            >
               <Image alt="youtube" src={YtImage} layout="fill" />
             </div>
           </div>

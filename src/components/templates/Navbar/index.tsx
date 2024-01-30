@@ -43,13 +43,16 @@ const Navbar: FC = () => {
       </div>
       <div
         className={cn([
-          "relative",
+          "relative cursor-pointer",
           // Mobile
           "w-6 h-6",
           // Mobile XL
           // Tab
           "tab:w-12 tab:h-12",
         ])}
+        onClick={() =>
+          window.open("https://www.instagram.com/generasicakap", "_blank")
+        }
       >
         <Image alt="instagram" src={InstagramImage} layout="fill" />
       </div>
