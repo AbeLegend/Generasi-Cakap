@@ -1631,6 +1631,11 @@ export default function Home() {
                 // Desktop
                 "desktop:text-2xl desktop:py-4",
               ])}
+              onClick={() =>
+                handleWhatsAppClick(
+                  "Hallo MinJi GenerasiCakap!\nSaya mau daftar program.."
+                )
+              }
             >
               Daftar Sekarang
             </Button>
