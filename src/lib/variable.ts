@@ -1,5 +1,5 @@
-// const noHelpDesk = "6281930073538";
-const noHelpDesk = "6285724104563"; // testing
+const noHelpDesk = "6281930073538";
+// const noHelpDesk = "6285724104563"; // testing
 
 const linkInstagram = "https://www.instagram.com/generasicakap"
 const linkYoutube = "https://www.youtube.com/channel/UCU8EB3sVnWmIcbybM3q--JA"
