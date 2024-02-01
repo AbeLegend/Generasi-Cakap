@@ -18,6 +18,7 @@ import {
   FAQData,
   TimelineData,
   cn,
+  figtree,
   handleWhatsAppClick,
   linkInstagram,
   linkLinkedin,
@@ -149,7 +150,8 @@ export default function Home() {
           <Button
             mode="primary"
             className={cn([
-              "py-4",
+              figtree.className,
+              "py-4 uppercase font-bold",
               // Mobile
               "w-[100%]",
               // Tab
@@ -321,18 +323,18 @@ export default function Home() {
       <section
         className={cn([
           // Mobile
-          "mb-32",
+          "pb-32 bg-gradient-to-b from-neutral-background to-white from-[15%] to-[15%]",
           // Mobile XL
           // Tab
-          "tab:grid tab:grid-cols-8 tab:mt-12 tab:mb-32 tab:px-10",
+          "tab:grid tab:grid-cols-8 tab:mt-12 tab:pb-32 tab:px-10",
           // Tab XL
-          "tab-xl:grid tab-xl:grid-cols-8 tab-xl:mt-12 tab-xl:mb-64",
+          "tab-xl:grid tab-xl:grid-cols-8 tab-xl:mt-12 tab-xl:pb-64",
           // Laptop
-          "laptop:grid laptop:grid-cols-8 laptop:mt-12 laptop:mb-64 laptop:px-0",
+          "laptop:grid laptop:grid-cols-8 laptop:mt-12 laptop:pb-64 laptop:px-0",
           // Laptop XL
-          "laptop-xl:grid laptop-xl:grid-cols-8 laptop-xl:mt-12 laptop-xl:mb-64",
+          "laptop-xl:grid laptop-xl:grid-cols-8 laptop-xl:mt-12 laptop-xl:pb-64",
           // Desktop
-          "desktop:px-32 desktop:grid desktop:grid-cols-8 desktop:mt-12 desktop:mb-64",
+          "desktop:px-32 desktop:grid desktop:grid-cols-8 desktop:mt-12 desktop:pb-64",
         ])}
       >
         <Card
@@ -457,7 +459,7 @@ export default function Home() {
       </section>
       {/* END: Section 3 */}
       {/* BEGIN: Section 4 */}
-      <section className="px-4 mb-32">
+      <section className="px-4 pb-32 bg-white">
         <Swiper
           modules={[Autoplay, Navigation, Scrollbar, A11y, Pagination]}
           slidesPerView={1}
@@ -506,7 +508,7 @@ export default function Home() {
       {/* BEGIN: Section 5 */}
       <section
         className={cn([
-          "px-4 mb-[34px]",
+          "px-4 mb-[34px] bg-gradient-to-b from-white to-neutral-background from-[70%] to-[30%]",
           // Mobile
           // Mobile XL
           // Tab
@@ -519,7 +521,7 @@ export default function Home() {
       >
         <h2
           className={cn([
-            "text-primary font-bold uppercase text-center mt-6",
+            "text-primary font-bold uppercase text-center pt-6",
             // Mobile
             "text-[30px]",
             // Mobile XL
@@ -565,15 +567,15 @@ export default function Home() {
             // Mobile
             // Mobile XL
             // Tab
-            "tab:px-10 laptop:mt-8",
+            "tab:px-[125px] laptop:mt-8",
             // Tab XL
-            "tab-xl:px-10 laptop:mt-8",
+            "tab-xl:px-[150px] laptop:mt-8",
             // Laptop
-            "laptop:px-20 laptop:mt-8",
+            "laptop:px-[190px] laptop:mt-8",
             // Laptop XL
-            "laptop-xl:px-20 laptop-xl:mt-8",
+            "laptop-xl:px-[200px] laptop-xl:mt-8",
             // Desktop
-            "desktop:px-32 desktop:mt-8",
+            "desktop:px-[240px] desktop:mt-8",
           ])}
         >
           <Card
@@ -845,7 +847,24 @@ export default function Home() {
       </section>
       {/* END: Section 5 */}
       {/* BEGIN: Section 6 */}
-      <section className="bg-secondary pt-6 relative z-10 overflow-hidden">
+      <section
+        className={cn([
+          "bg-secondary pt-6 relative z-10 overflow-hidden",
+          // Mobile
+          // Mobile XL
+          "mobile-xl:pt-8",
+          // Tab
+          "tab:pt-10",
+          // Tab XL
+          "tab-xl:pt-10",
+          // Laptop
+          "laptop:pt-12",
+          // Laptop Xl
+          "laptop-xl:pt-14",
+          // Desktop
+          "desktop:pt-16",
+        ])}
+      >
         <h2
           className={cn([
             "uppercase text-neutral-100 font-bold text-center px-4",
@@ -999,11 +1018,11 @@ export default function Home() {
           // Tab
           // Tab XL
           // Laptop
-          "laptop:px-20 laptop:-top-20",
+          "laptop:px-0 laptop:-top-20",
           // Laptop XL
-          "laptop-xl:px-20 laptop-xl`:-top-20",
+          "laptop-xl:px-0 laptop-xl`:-top-20",
           // Desktop
-          "desktop:px-32 desktop:-top-20",
+          "desktop:px-0 desktop:-top-20",
         ])}
       >
         <Card className="border-none bg-[#F8FAFC] my-0">
@@ -1055,12 +1074,15 @@ export default function Home() {
               // Mobile
               // Mobile XL
               // Tab
-              "tab:mt-8",
+              "tab:px-[125px] laptop:mt-8",
               // Tab XL
+              "tab-xl:px-[150px] laptop:mt-8",
               // Laptop
+              "laptop:px-[190px] laptop:mt-8",
               // Laptop XL
+              "laptop-xl:px-[200px] laptop-xl:mt-8",
               // Desktop
-              "desktop:mt-8",
+              "desktop:px-[240px] desktop:mt-8",
             ])}
           >
             <Card
@@ -1069,6 +1091,7 @@ export default function Home() {
                 // Mobile
                 // Mobile XL
                 // Tab
+                "tab:col-span-6",
                 // Tab XL
                 // Laptop
                 "laptop:col-span-3",
@@ -1112,6 +1135,7 @@ export default function Home() {
                 // Mobile
                 // Mobile XL
                 // Tab
+                "tab:col-span-6",
                 // Tab XL
                 // Laptop
                 "laptop:col-span-3",
@@ -1156,6 +1180,7 @@ export default function Home() {
                 // Mobile
                 // Mobile XL
                 // Tab
+                "tab:col-span-6",
                 // Tab XL
                 // Laptop
                 "laptop:col-span-3",
@@ -1200,6 +1225,7 @@ export default function Home() {
                 // Mobile
                 // Mobile XL
                 // Tab
+                "tab:col-span-6",
                 // Tab XL
                 // Laptop
                 "laptop:col-span-3",
@@ -1617,6 +1643,8 @@ export default function Home() {
             <Button
               mode="primary"
               className={cn([
+                figtree.className,
+                "font-bold",
                 "mb-[29px] uppercase",
                 // Mobile
                 // Mobile XL
@@ -1652,7 +1680,7 @@ export default function Home() {
       {/* BEGIN: Section 10 */}
       <section
         className={cn([
-          "px-4",
+          "px-4 bg-white",
           // Mobile
           // Mobile XL
           // Tab
@@ -1807,19 +1835,19 @@ export default function Home() {
       {/* BEGIN: Section 11 */}
       <section
         className={cn([
-          "bg-[#F8FAFC] px-4",
+          "px-4 py-16",
           // Mobile
           // Mobile XL
           // Tab
-          "tab:px-16 desktop:py-[192px] tab:mb-[320px]",
+          "tab:px-16 tab:py-32",
           // Tab XL
-          "tab-xl:px-20 desktop:py-[192px]",
+          "tab-xl:px-20 tab-xl:py-36",
           // Laptop
-          "laptop:px-32 desktop:py-[192px]",
+          "laptop:px-32 laptop:py-40",
           // Laptop XL
-          "laptop-xl:px-32 desktop:py-[192px]",
+          "laptop-xl:px-32 laptop-xl:py-44",
           // Desktop
-          "desktop:px-[240px] desktop:py-[192px]",
+          "desktop:px-[240px] desktop:py-48",
         ])}
       >
         <h2
@@ -1895,17 +1923,18 @@ export default function Home() {
       {/* BEGIN: Section 12 */}
       <section
         className={cn([
-          "py-[46px] px-0",
+          "bg-white",
+          "px-0 py-[46px]",
           // Mobile
           // Mobile XL
           // Tab
-          "tab:px-0",
+          "tab:px-0 tab:py-20",
           // Tab XL
           // Laptop
-          "laptop:px-20",
+          "laptop:px-20 laptop:py-32",
           // Laptop XL
           // Desktop
-          "desktop:px-32",
+          "desktop:px-32 desktop:py-32",
         ])}
       >
         <h2
@@ -1984,9 +2013,8 @@ export default function Home() {
           Cahaya Kebaikan yang didirikan berdasarkan hukum negara Republik
           Indonesia.
         </p>
-      </section>
-      {/* END: Section 12 */}
-      {/* BEGIN: Section 13 */}
+        {/* </section>
+
       <section
         className={cn([
           "py-[46px] px-1",
@@ -2001,7 +2029,7 @@ export default function Home() {
           // Desktop
           "desktop:px-32",
         ])}
-      >
+      > */}
         <h2
           className={cn([
             "text-primary uppercase font-bold text-center mb-6",
@@ -2011,9 +2039,11 @@ export default function Home() {
             "tab:text-[35px]",
             // Tab XL
             // Laptop
+            "laptop:mt-[131px]",
             // Laptop XL
+            // "laptop-xl:mt-[131px]",
             // Desktop
-            "desktop:text-[52px] desktop:px-[270px] desktop:leading-[72px]",
+            "desktop:text-[52px] desktop:px-[270px] desktop:leading-[72px] desktop:mt-[151px]",
           ])}
         >
           Partner dan kolaborator kami
@@ -2118,7 +2148,7 @@ export default function Home() {
             <Image alt="linkedin" src={LinkedinImage} layout="fill" />
           </div>
           <div
-            className="relative cursor-pointer w-9 h-9"
+            className="relative cursor-pointer w-[30px] h-[30px]"
             onClick={() => window.open(linkTiktok, "_blank")}
           >
             <Image alt="tiktok" src={TiktokImage} layout="fill" />
@@ -2307,7 +2337,7 @@ export default function Home() {
         <div>
           <p
             className={cn([
-              mulish.className,
+              // mulish.className,
               // Mobile
               // Mobile XL
               // Tab
@@ -2355,7 +2385,7 @@ export default function Home() {
               <Image alt="linkedin" src={LinkedinImage} layout="fill" />
             </div>
             <div
-              className="relative cursor-pointer w-12 h-12"
+              className="relative cursor-pointer w-10 h-10"
               onClick={() => window.open(linkTiktok, "_blank")}
             >
               <Image alt="tiktok" src={TiktokImage} layout="fill" />

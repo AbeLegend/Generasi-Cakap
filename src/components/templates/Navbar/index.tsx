@@ -12,6 +12,7 @@ const Navbar: FC = () => {
     <nav
       className={cn([
         "bg-neutral-100 flex justify-between sticky z-50 w-full h-[33px] items-center top-0",
+        "shadow-[5px_5px_5px_0px_rgba(0,0,0,0.02)]",
         // Mobile
         "px-4 py-6",
         // Mobile XL

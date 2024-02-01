@@ -22,7 +22,7 @@ const TimelineCard: FC<TimelineCardProps> = ({
     <div
       className={cn([
         "rounded-lg shadow-[0_0_20px_0px_rgba(28,15,172,0.12)]",
-        isOrange ? "bg-secondary" : "bg-transparent",
+        isOrange ? "bg-secondary" : "bg-[#FFF]",
       ])}
     >
       {/* Title */}
@@ -45,11 +45,7 @@ const TimelineCard: FC<TimelineCardProps> = ({
       <div
         className={cn([
           "py-2 rounded-b-lg",
-          !isKickOff
-            ? "bg-transparent"
-            : isOrange
-            ? "bg-[#F59D07]"
-            : "bg-transparent",
+          !isKickOff ? "bg-[#FFF]" : isOrange ? "bg-[#F59D07]" : "bg-[#FFF]",
           date === null && "hidden",
         ])}
       >
@@ -58,7 +54,7 @@ const TimelineCard: FC<TimelineCardProps> = ({
             mulish.className,
             "rounded-lg text-center text-sm font-bold py-1 mx-2",
             isOrange
-              ? "bg-neutral-100 text-secondary-pressed"
+              ? "bg-[#FFF] text-secondary-pressed"
               : "bg-info-surface text-info-pressed",
           ])}
         >
@@ -69,7 +65,9 @@ const TimelineCard: FC<TimelineCardProps> = ({
       <div className="pb-1">
         {item && item.length > 0 && (
           <ul
-            className={cn(["grid gap-y-2 mt-0 marker:text-neutral-800 px-4"])}
+            className={cn([
+              "grid gap-y-2 mt-0 marker:text-neutral-800 px-4 bg-[#FFF] rounded-b-lg",
+            ])}
           >
             {/* <p className="text-center text-gc-body-2 text-neutral-800 font-bold">
               Materi:

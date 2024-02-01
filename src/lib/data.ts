@@ -14,7 +14,7 @@ const FAQData: Array<FAQItem> = [
     answer: ["Betul sekali, Career Catalyst dilaksanakan secara online yaaa. Dilakukan dengan metode pembelajaran <i>synchronous</i> dan <i>asynchronous.</i>"],
   },
   {
-    question: "Benefit apa saya yang didapatkan?",
+    question: "Benefit apa yang akan saya dapatkan?",
     answer: [
       "E- Certificate",
       "4x kelas online",
