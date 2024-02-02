@@ -19,6 +19,7 @@ import {
   TimelineData,
   cn,
   figtree,
+  handleSendEmail,
   handleWhatsAppClick,
   linkInstagram,
   linkLinkedin,
@@ -2160,8 +2161,14 @@ export default function Home() {
             <Image alt="youtube" src={YtImage} layout="fill" />
           </div>
         </div>
-        <p className={cn([mulish.className, "text-primary font-bold text-sm"])}>
-          generasicakap@gmail.com
+        <p
+          className={cn([
+            mulish.className,
+            "text-primary font-bold text-sm cursor-pointer",
+          ])}
+          onClick={() => handleSendEmail()}
+        >
+          info@generasicakap.com
         </p>
         <hr className="mx-11 bg-neutral-500 border-none h-[1px] mb-6 my-6" />
       </section>
@@ -2400,7 +2407,7 @@ export default function Home() {
           <p
             className={cn([
               mulish.className,
-              "text-primary font-bold",
+              "text-primary font-bold cursor-pointer",
               // Mobile
               // Mobile XL
               // Tab
@@ -2414,8 +2421,9 @@ export default function Home() {
               // Desktop
               "desktop:text-xl",
             ])}
+            onClick={() => handleSendEmail()}
           >
-            generasicakap@gmail.com
+            info@generasicakap.com
           </p>
         </div>
       </section>
