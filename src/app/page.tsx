@@ -32,23 +32,17 @@ import { Navbar } from "@/components/templates";
 import { FAQCard, ProfileCard, TimelineCard } from "@/components/molecules";
 // Image
 import HumanStandingImage from "@/images/human-standing.png";
-import CareerCatalystsImage from "@/images/career catalyst.png";
-import LogoGenerasiCakapImage from "@/images/logo generasi cakap.png";
 import LogoGenerasiCakapBigImage from "@/images/logo generasi cakap-big.png";
-import CareerCoachingImage from "@/images/career coaching.png";
 import VectorImage from "@/images/vector.png";
-import VectorLargeImage from "@/images/vector-large.png";
 import Vector2Image from "@/images/vector-2.png";
 import CircleCheckSVG from "@/svg/check-circle.svg";
 import CircleCheckWhiteSVG from "@/svg/check-circle-white.svg";
 import SliderImage from "@/images/dummy/slider.png";
 import ProfileImage from "@/images/dummy/profile.png";
 import CompanyImage from "@/images/company.png";
-import SponsorsImage from "@/images/sponsors.png";
 import InstagramImage from "@/images/logo-ig.png";
 import LinkedinImage from "@/images/linkedin.png";
 import TimelineDownSVG from "@/svg/timeline-down.svg";
-import CareerCatalystsLargeImage from "@/images/career catalyst-large.png";
 import CareerPathImage from "@/images/career-path.png";
 import SponsorsLargeImage from "@/images/sponsors-large.png";
 import CareerCatalystImage from "@/images/career-catalyst-fix.png";
@@ -56,6 +50,12 @@ import IdontKnowImage from "@/images/idontknow.png";
 import GCXCIImage from "@/images/gc-x-ci.png";
 import TiktokImage from "@/images/tiktok.png";
 import YtImage from "@/images/yt.png";
+import MentorImage1 from "@/images/mentoring-image.png";
+import MentorImage2 from "@/images/mentoring-image-2.png";
+import MentorImage3 from "@/images/mentoring-image-3.png";
+import MentorImage4 from "@/images/mentoring-image-4.png";
+import MentorImage5 from "@/images/mentoring-image-5.png";
+import MentorImage6 from "@/images/mentoring-image-6.png";
 
 // SVG
 import CoperSVG from "@/svg/coper.svg";
@@ -460,50 +460,204 @@ export default function Home() {
       </section>
       {/* END: Section 3 */}
       {/* BEGIN: Section 4 */}
-      <section className="px-4 pb-32 bg-white">
-        <Swiper
-          modules={[Autoplay, Navigation, Scrollbar, A11y, Pagination]}
-          slidesPerView={1}
-          spaceBetween={16}
-          navigation
-          autoplay={{ delay: 2000, disableOnInteraction: false }}
-          pagination={{ enabled: true }}
-          scrollbar={{ draggable: true }}
-          className=""
+      <section
+        className={cn([
+          "px-4 pb-32 bg-white grid",
+          // Mobile
+          "grid-cols-4",
+          // Mobile XL
+          // Tab
+          // Tab XL
+          "tab-xl:grid-cols-8",
+          // Laptop
+          // Laptop XL
+          // Desktop
+        ])}
+      >
+        <div
+          className={cn([
+            "rounded-2xl bg-[#1A1A1A] p-4 grid",
+            // Mobile
+            "col-span-4 grid-cols-4",
+            // Mobile XL
+            // Tab
+            // Tab XL
+            "tab-xl:col-span-6 tab-xl:col-start-2 tab-xl:grid-cols-6",
+            // Laptop
+            // Laptop XL
+            // Desktop
+            "gap-y-1",
+          ])}
         >
-          <SwiperSlide className="relative pb-10">
-            <Image
-              alt="slide-2"
-              src={SliderImage}
-              objectFit="cover"
-              className="mx-auto"
-            />
-          </SwiperSlide>
-          <SwiperSlide className="relative pb-10">
-            <Image
-              alt="slide-2"
-              src={SliderImage}
-              objectFit="cover"
-              className="mx-auto"
-            />
-          </SwiperSlide>
-          <SwiperSlide className="relative pb-10">
-            <Image
-              alt="slide-2"
-              src={SliderImage}
-              objectFit="cover"
-              className="mx-auto"
-            />
-          </SwiperSlide>
-          <SwiperSlide className="relative pb-10">
-            <Image
-              alt="slide-2"
-              src={SliderImage}
-              objectFit="cover"
-              className="mx-auto"
-            />
-          </SwiperSlide>
-        </Swiper>
+          <div
+            className={cn([
+              "flex items-center",
+              // Mobile
+              "col-span-4",
+              // Mobile XL
+              // Tab
+              // Tab XL
+              "tab-xl:col-span-6",
+              // Laptop
+              // Laptop XL
+              // Desktop
+              "gap-x-4",
+            ])}
+          >
+            <div
+              className={cn([
+                "relative w-1/2",
+                // Mobile
+                "h-[80px]",
+                // Mobile XL
+                "mobile-xl:h-[100px]",
+                // Tab
+                "tab:h-[105px]",
+                // Tab XL
+                "tab-xl:h-[123px]",
+                // Laptop
+                "laptop:h-[138px]",
+                // Laptop XL
+                "laptop-xl:h-[143px]",
+                // Desktop
+              ])}
+            >
+              <Image alt="" src={MentorImage1} layout="fill" />
+            </div>
+            <div
+              className={cn([
+                "relative w-1/2",
+                // Mobile
+                "h-[80px]",
+                // Mobile XL
+                "mobile-xl:h-[100px]",
+                // Tab
+                "tab:h-[105px]",
+                // Tab XL
+                "tab-xl:h-[123px]",
+                // Laptop
+                "laptop:h-[138px]",
+                // Laptop XL
+                "laptop-xl:h-[143px]",
+                // Desktop
+              ])}
+            >
+              <Image alt="" src={MentorImage2} layout="fill" />
+            </div>
+          </div>
+          <div
+            className={cn([
+              "flex items-center",
+              // Mobile
+              "col-span-4",
+              // Mobile XL
+              // Tab
+              "tab:col-span-6",
+              // Tab XL
+              // Laptop
+              // Laptop XL
+              // Desktop
+              "gap-x-4",
+            ])}
+          >
+            <div
+              className={cn([
+                "relative w-1/2",
+                // Mobile
+                "h-[80px]",
+                // Mobile XL
+                "mobile-xl:h-[100px]",
+                // Tab
+                "tab:h-[105px]",
+                // Tab XL
+                "tab-xl:h-[123px]",
+                // Laptop
+                "laptop:h-[138px]",
+                // Laptop XL
+                "laptop-xl:h-[143px]",
+                // Desktop
+              ])}
+            >
+              <Image alt="" src={MentorImage3} layout="fill" />
+            </div>
+            <div
+              className={cn([
+                "relative w-1/2",
+                // Mobile
+                "h-[80px]",
+                // Mobile XL
+                "mobile-xl:h-[100px]",
+                // Tab
+                "tab:h-[105px]",
+                // Tab XL
+                "tab-xl:h-[123px]",
+                // Laptop
+                "laptop:h-[138px]",
+                // Laptop XL
+                "laptop-xl:h-[143px]",
+                // Desktop
+              ])}
+            >
+              <Image alt="" src={MentorImage4} layout="fill" />
+            </div>
+          </div>
+          <div
+            className={cn([
+              "flex items-center",
+              // Mobile
+              "col-span-4",
+              // Mobile XL
+              // Tab
+              "tab:col-span-6",
+              // Tab XL
+              // Laptop
+              // Laptop XL
+              // Desktop
+              "gap-x-4",
+            ])}
+          >
+            <div
+              className={cn([
+                "relative w-1/2",
+                // Mobile
+                "h-[80px]",
+                // Mobile XL
+                "mobile-xl:h-[100px]",
+                // Tab
+                "tab:h-[105px]",
+                // Tab XL
+                "tab-xl:h-[123px]",
+                // Laptop
+                "laptop:h-[138px]",
+                // Laptop XL
+                "laptop-xl:h-[143px]",
+                // Desktop
+              ])}
+            >
+              <Image alt="" src={MentorImage5} layout="fill" />
+            </div>
+            <div
+              className={cn([
+                "relative w-1/2",
+                // Mobile
+                "h-[80px]",
+                // Mobile XL
+                "mobile-xl:h-[100px]",
+                // Tab
+                "tab:h-[105px]",
+                // Tab XL
+                "tab-xl:h-[123px]",
+                // Laptop
+                "laptop:h-[138px]",
+                // Laptop XL
+                "laptop-xl:h-[143px]",
+                // Desktop
+              ])}
+            >
+              <Image alt="" src={MentorImage6} layout="fill" />
+            </div>
+          </div>
+        </div>
       </section>
       {/* END: Section 4 */}
       {/* BEGIN: Section 5 */}
