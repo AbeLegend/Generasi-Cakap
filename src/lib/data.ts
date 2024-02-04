@@ -1,3 +1,12 @@
+// lib
+import { StaticImageData } from "next/image";
+// local
+import JeffreyKieImage from '@/images/coach/Jeffrey Kie.png'
+import NurAnugerahImage from '@/images/coach/Nur Anugerah.png'
+import NinienIrnawatiImage from '@/images/coach/Ninien Irnawati.png'
+import PutriParamitaImage from '@/images/coach/Putri Paramita.png'
+import YasmineKristantiImage from '@/images/coach/Yasmine Kristanti.png'
+
 interface FAQItem {
   question: string;
   answer: Array<string>;
@@ -91,7 +100,7 @@ const TimelineData: Array<TimelineItem> = [
     isKickOff: false,
     isOrange: false,
     title: "In-class Learning: Session #2",
-    item: ["Job Market Trends & Networking Strategies", "LinkedIn & Jobstreet Optimization", "LinkedIn & Jobstreet Optimization"]
+    item: ["Job Market Trends & Networking Strategies", "LinkedIn & Jobstreet Optimization"]
   },
   {
     date: "4 Maret 2024",
@@ -127,4 +136,39 @@ const TimelineData: Array<TimelineItem> = [
   },
 ]
 
-export { FAQData, TimelineData }
+interface CoachItem {
+  image: StaticImageData;
+  name: string;
+  desc: string
+}
+
+const CoachData: Array<CoachItem> = [
+  {
+    image: JeffreyKieImage,
+    name: "Jeffrey Kie",
+    desc: "Certified Coach, Motivational & Inspirational Speaker.Berpengalaman sebagai pimpinan perusahaan dalam bidang: Asuransi, importir dan perdagangan, serta jaringan bioskop."
+  },
+  {
+    image: NurAnugerahImage,
+    name: "Nur Anugerah",
+    desc: "Psikolog, Certified Coach dan Founder GenerasiCakap, Ketua Yayasan Generasi Cahaya Kebaikan, Expert di bidang HR (10 tahun pengalaman) di Assessment, Learning & Development, Corporate Culture."
+  },
+  {
+    image: NinienIrnawatiImage,
+    name: "Ninien Irnawati",
+    desc: "Certified Coach, HR Professional, Expert di bidang HR & Recruitment (20 tahun pengalaman) di bidang Pendidikan, Tech Company, MBA Universitas Gajah Mada."
+  },
+  {
+    image: PutriParamitaImage,
+    name: "Putri Paramita",
+    desc: "Certified Coach spesialisasi Gratitude Coach & Personal Growth, Expert Business Analyst di bidang automotive"
+  },
+  {
+    image: YasmineKristantiImage,
+    name: "Yasmine Kristanti",
+    desc: "Certified Coach, Expert in Branding, Marketing & Communication (15 tahun pengalaman) di bidang advertising"
+  },
+]
+
+export { FAQData, TimelineData, CoachData }
+export type { CoachItem }

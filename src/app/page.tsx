@@ -15,6 +15,8 @@ import {
 // local
 import { Button, Card } from "@/components/atoms";
 import {
+  CoachData,
+  CoachItem,
   FAQData,
   TimelineData,
   cn,
@@ -37,7 +39,6 @@ import VectorImage from "@/images/vector.png";
 import Vector2Image from "@/images/vector-2.png";
 import CircleCheckSVG from "@/svg/check-circle.svg";
 import CircleCheckWhiteSVG from "@/svg/check-circle-white.svg";
-import SliderImage from "@/images/dummy/slider.png";
 import ProfileImage from "@/images/dummy/profile.png";
 import CompanyImage from "@/images/company.png";
 import InstagramImage from "@/images/logo-ig.png";
@@ -508,18 +509,19 @@ export default function Home() {
               className={cn([
                 "relative w-1/2",
                 // Mobile
-                "h-[80px]",
+                "h-[49px]",
                 // Mobile XL
-                "mobile-xl:h-[100px]",
+                "mobile-xl:h-[66px]",
                 // Tab
-                "tab:h-[105px]",
+                "tab:h-[100px]",
                 // Tab XL
-                "tab-xl:h-[123px]",
+                "tab-xl:h-[100px]",
                 // Laptop
-                "laptop:h-[138px]",
+                "laptop:h-[120px]",
                 // Laptop XL
-                "laptop-xl:h-[143px]",
+                "laptop-xl:h-[135px]",
                 // Desktop
+                "desktop:h-[155px]",
               ])}
             >
               <Image alt="" src={MentorImage1} layout="fill" />
@@ -528,18 +530,19 @@ export default function Home() {
               className={cn([
                 "relative w-1/2",
                 // Mobile
-                "h-[80px]",
+                "h-[49px]",
                 // Mobile XL
-                "mobile-xl:h-[100px]",
+                "mobile-xl:h-[66px]",
                 // Tab
-                "tab:h-[105px]",
+                "tab:h-[100px]",
                 // Tab XL
-                "tab-xl:h-[123px]",
+                "tab-xl:h-[100px]",
                 // Laptop
-                "laptop:h-[138px]",
+                "laptop:h-[120px]",
                 // Laptop XL
-                "laptop-xl:h-[143px]",
+                "laptop-xl:h-[135px]",
                 // Desktop
+                "desktop:h-[155px]",
               ])}
             >
               <Image alt="" src={MentorImage2} layout="fill" />
@@ -564,18 +567,19 @@ export default function Home() {
               className={cn([
                 "relative w-1/2",
                 // Mobile
-                "h-[80px]",
+                "h-[49px]",
                 // Mobile XL
-                "mobile-xl:h-[100px]",
+                "mobile-xl:h-[66px]",
                 // Tab
-                "tab:h-[105px]",
+                "tab:h-[100px]",
                 // Tab XL
-                "tab-xl:h-[123px]",
+                "tab-xl:h-[100px]",
                 // Laptop
-                "laptop:h-[138px]",
+                "laptop:h-[120px]",
                 // Laptop XL
-                "laptop-xl:h-[143px]",
+                "laptop-xl:h-[135px]",
                 // Desktop
+                "desktop:h-[155px]",
               ])}
             >
               <Image alt="" src={MentorImage3} layout="fill" />
@@ -584,18 +588,19 @@ export default function Home() {
               className={cn([
                 "relative w-1/2",
                 // Mobile
-                "h-[80px]",
+                "h-[49px]",
                 // Mobile XL
-                "mobile-xl:h-[100px]",
+                "mobile-xl:h-[66px]",
                 // Tab
-                "tab:h-[105px]",
+                "tab:h-[100px]",
                 // Tab XL
-                "tab-xl:h-[123px]",
+                "tab-xl:h-[100px]",
                 // Laptop
-                "laptop:h-[138px]",
+                "laptop:h-[120px]",
                 // Laptop XL
-                "laptop-xl:h-[143px]",
+                "laptop-xl:h-[135px]",
                 // Desktop
+                "desktop:h-[155px]",
               ])}
             >
               <Image alt="" src={MentorImage4} layout="fill" />
@@ -620,18 +625,19 @@ export default function Home() {
               className={cn([
                 "relative w-1/2",
                 // Mobile
-                "h-[80px]",
+                "h-[49px]",
                 // Mobile XL
-                "mobile-xl:h-[100px]",
+                "mobile-xl:h-[66px]",
                 // Tab
-                "tab:h-[105px]",
+                "tab:h-[100px]",
                 // Tab XL
-                "tab-xl:h-[123px]",
+                "tab-xl:h-[100px]",
                 // Laptop
-                "laptop:h-[138px]",
+                "laptop:h-[120px]",
                 // Laptop XL
-                "laptop-xl:h-[143px]",
+                "laptop-xl:h-[135px]",
                 // Desktop
+                "desktop:h-[155px]",
               ])}
             >
               <Image alt="" src={MentorImage5} layout="fill" />
@@ -640,18 +646,19 @@ export default function Home() {
               className={cn([
                 "relative w-1/2",
                 // Mobile
-                "h-[80px]",
+                "h-[49px]",
                 // Mobile XL
-                "mobile-xl:h-[100px]",
+                "mobile-xl:h-[66px]",
                 // Tab
-                "tab:h-[105px]",
+                "tab:h-[100px]",
                 // Tab XL
-                "tab-xl:h-[123px]",
+                "tab-xl:h-[100px]",
                 // Laptop
-                "laptop:h-[138px]",
+                "laptop:h-[120px]",
                 // Laptop XL
-                "laptop-xl:h-[143px]",
+                "laptop-xl:h-[135px]",
                 // Desktop
+                "desktop:h-[155px]",
               ])}
             >
               <Image alt="" src={MentorImage6} layout="fill" />
@@ -1077,18 +1084,16 @@ export default function Home() {
             "desktop:hidden",
           ])}
         >
-          {Array(10)
-            .fill(null)
-            .map((item, index) => {
-              return (
-                <ProfileCard
-                  image={ProfileImage}
-                  name="Michael Bloomberg Smith"
-                  position="Head Coach at Indonesia Career Growth"
-                  key={index}
-                />
-              );
-            })}
+          {CoachData.map((item, index) => {
+            return (
+              <ProfileCard
+                key={index}
+                image={item.image}
+                name={item.name}
+                position={item.desc}
+              />
+            );
+          })}
         </div>
         <div
           className={cn([
@@ -1118,40 +1123,30 @@ export default function Home() {
           >
             <SwiperSlide className="pb-10">
               <div className="flex gap-x-6 justify-center">
-                <ProfileCard
-                  image={ProfileImage}
-                  name="Michael Bloomberg Smith"
-                  position="Head Coach at Indonesia Career Growth"
-                />
-                <ProfileCard
-                  image={ProfileImage}
-                  name="Michael Bloomberg Smith"
-                  position="Head Coach at Indonesia Career Growth"
-                />
-                <ProfileCard
-                  image={ProfileImage}
-                  name="Michael Bloomberg Smith"
-                  position="Head Coach at Indonesia Career Growth"
-                />
+                {CoachData.slice(0, 3).map((item, index) => {
+                  return (
+                    <ProfileCard
+                      key={index}
+                      image={item.image}
+                      name={item.name}
+                      position={item.desc}
+                    />
+                  );
+                })}
               </div>
             </SwiperSlide>
             <SwiperSlide className="pb-10">
               <div className="flex gap-x-6 justify-center">
-                <ProfileCard
-                  image={ProfileImage}
-                  name="Michael Bloomberg Smith"
-                  position="Head Coach at Indonesia Career Growth"
-                />
-                <ProfileCard
-                  image={ProfileImage}
-                  name="Michael Bloomberg Smith"
-                  position="Head Coach at Indonesia Career Growth"
-                />
-                <ProfileCard
-                  image={ProfileImage}
-                  name="Michael Bloomberg Smith"
-                  position="Head Coach at Indonesia Career Growth"
-                />
+                {CoachData.slice(3, 6).map((item, index) => {
+                  return (
+                    <ProfileCard
+                      key={index}
+                      image={item.image}
+                      name={item.name}
+                      position={item.desc}
+                    />
+                  );
+                })}
               </div>
             </SwiperSlide>
           </Swiper>
@@ -1443,6 +1438,7 @@ export default function Home() {
           className={cn([
             muli.className,
             "text-primary font-bold text-center mb-6",
+            "text-[36px]",
             // Mobile
             // Mobile XL
             // Tab
@@ -1868,7 +1864,7 @@ export default function Home() {
         >
           <h2
             className={cn([
-              "text-primary font-bold text-center mt-16 uppercase",
+              "text-primary font-bold text-center pt-16 uppercase",
               // Mobile
               // Mobile XL
               // Tab
@@ -2188,13 +2184,13 @@ export default function Home() {
         <h2
           className={cn([
             "text-primary uppercase font-bold text-center mb-6",
+            "mt-[131px]",
             // Mobile
             // Mobile XL
             // Tab
             "tab:text-[35px]",
             // Tab XL
             // Laptop
-            "laptop:mt-[131px]",
             // Laptop XL
             // "laptop-xl:mt-[131px]",
             // Desktop

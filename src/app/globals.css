@@ -10,3 +10,9 @@
     @apply text-gc-sub-heading leading-gc-sub-heading;
   }
 }
+@layer utilities {
+  .overflow-x-scroll::-webkit-scrollbar {
+    width: 0px;
+    display: none;
+  }
+}
