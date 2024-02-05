@@ -16,7 +16,6 @@ import {
 import { Button, Card } from "@/components/atoms";
 import {
   CoachData,
-  CoachItem,
   FAQData,
   TimelineData,
   cn,
@@ -39,7 +38,6 @@ import VectorImage from "@/images/vector.png";
 import Vector2Image from "@/images/vector-2.png";
 import CircleCheckSVG from "@/svg/check-circle.svg";
 import CircleCheckWhiteSVG from "@/svg/check-circle-white.svg";
-import ProfileImage from "@/images/dummy/profile.png";
 import CompanyImage from "@/images/company.png";
 import InstagramImage from "@/images/logo-ig.png";
 import LinkedinImage from "@/images/linkedin.png";
@@ -51,12 +49,8 @@ import IdontKnowImage from "@/images/idontknow.png";
 import GCXCIImage from "@/images/gc-x-ci.png";
 import TiktokImage from "@/images/tiktok.png";
 import YtImage from "@/images/yt.png";
-import MentorImage1 from "@/images/mentoring-image.png";
-import MentorImage2 from "@/images/mentoring-image-2.png";
-import MentorImage3 from "@/images/mentoring-image-3.png";
-import MentorImage4 from "@/images/mentoring-image-4.png";
-import MentorImage5 from "@/images/mentoring-image-5.png";
-import MentorImage6 from "@/images/mentoring-image-6.png";
+import MentorImage from "@/images/mentor.png";
+import MentorMobileImage from "@/images/mentor-mobile.png";
 
 // SVG
 import CoperSVG from "@/svg/coper.svg";
@@ -477,6 +471,39 @@ export default function Home() {
       >
         <div
           className={cn([
+            "rounded-2xl bg-[#1A1A1A] p-4 relative w-full",
+            // Mobile
+            "col-span-4 hidden",
+            // Mobile XL
+            // Tab
+            "tab:h-[370px] tab:block",
+            // Tab XL
+            "tab-xl:col-span-6 tab-xl:col-start-2 tab-xl:h-[350px]",
+            // Laptop
+            "laptop:h-[450.24px]",
+            // Laptop XL
+            "laptop-xl:h-[476.24px]",
+            // Desktop
+            "desktop:h-[515px]",
+          ])}
+        >
+          <Image alt="" src={MentorImage} layout="fill" />
+        </div>
+        <div
+          className={cn([
+            "rounded-2xl bg-[#1A1A1A] p-4 relative w-full",
+            // Mobile
+            "col-span-4 h-[320px]",
+            // Mobile XL
+            "mobile-xl:h-[408px]",
+            // Tab
+            "tab:hidden",
+          ])}
+        >
+          <Image alt="" src={MentorMobileImage} layout="fill" />
+        </div>
+        {/* <div
+          className={cn([
             "rounded-2xl bg-[#1A1A1A] p-4 grid",
             // Mobile
             "col-span-4 grid-cols-4",
@@ -664,7 +691,7 @@ export default function Home() {
               <Image alt="" src={MentorImage6} layout="fill" />
             </div>
           </div>
-        </div>
+        </div> */}
       </section>
       {/* END: Section 4 */}
       {/* BEGIN: Section 5 */}
@@ -1090,7 +1117,8 @@ export default function Home() {
                 key={index}
                 image={item.image}
                 name={item.name}
-                position={item.desc}
+                position={item.position}
+                desc={item.desc}
               />
             );
           })}
@@ -1129,7 +1157,8 @@ export default function Home() {
                       key={index}
                       image={item.image}
                       name={item.name}
-                      position={item.desc}
+                      position={item.position}
+                      desc={item.desc}
                     />
                   );
                 })}
@@ -1143,7 +1172,23 @@ export default function Home() {
                       key={index}
                       image={item.image}
                       name={item.name}
-                      position={item.desc}
+                      position={item.position}
+                      desc={item.desc}
+                    />
+                  );
+                })}
+              </div>
+            </SwiperSlide>
+            <SwiperSlide className="pb-10">
+              <div className="flex gap-x-6 justify-center">
+                {CoachData.slice(6, 9).map((item, index) => {
+                  return (
+                    <ProfileCard
+                      key={index}
+                      image={item.image}
+                      name={item.name}
+                      position={item.position}
+                      desc={item.desc}
                     />
                   );
                 })}

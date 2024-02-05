@@ -8,6 +8,7 @@ interface ProfileCardProps {
   image: StaticImageData;
   name: string;
   position: string;
+  desc: string;
   className?: string;
 }
 
@@ -15,6 +16,7 @@ const ProfileCard: FC<ProfileCardProps> = ({
   image,
   name,
   position,
+  desc,
   className,
 }) => {
   return (
@@ -50,11 +52,20 @@ const ProfileCard: FC<ProfileCardProps> = ({
       <p
         className={cn([
           muli.className,
-          "text-neutral-600 text-center text-xs leading-gc-body-4",
+          "text-neutral-900 text-center text-xs leading-gc-body-4 font-bold",
           "desktop:text-base",
         ])}
       >
         {position}
+      </p>
+      <p
+        className={cn([
+          muli.className,
+          "text-neutral-600 text-center text-xs leading-gc-body-4",
+          "desktop:text-base",
+        ])}
+      >
+        {desc}
       </p>
     </div>
   );

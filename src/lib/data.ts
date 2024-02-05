@@ -1,11 +1,16 @@
 // lib
 import { StaticImageData } from "next/image";
 // local
+import DummyImage from '@/images/dummy/profile.png'
 import JeffreyKieImage from '@/images/coach/Jeffrey Kie.png'
 import NurAnugerahImage from '@/images/coach/Nur Anugerah.png'
 import NinienIrnawatiImage from '@/images/coach/Ninien Irnawati.png'
 import PutriParamitaImage from '@/images/coach/Putri Paramita.png'
 import YasmineKristantiImage from '@/images/coach/Yasmine Kristanti.png'
+import JaneArdaneshawariImage from '@/images/coach/Jane Ardaneshawari.png'
+import NovenaAmauriImage from '@/images/coach/Novena Amauri.png'
+import CiciliaPrimanitaImage from '@/images/coach/Cicilia Primanita.png'
+import ImeldaSumurungImage from '@/images/coach/Imelda Sumurung.png'
 
 interface FAQItem {
   question: string;
@@ -139,34 +144,65 @@ const TimelineData: Array<TimelineItem> = [
 interface CoachItem {
   image: StaticImageData;
   name: string;
-  desc: string
+  position: string;
+  desc: string;
+
 }
 
 const CoachData: Array<CoachItem> = [
   {
     image: JeffreyKieImage,
     name: "Jeffrey Kie",
-    desc: "Certified Coach, Motivational & Inspirational Speaker.Berpengalaman sebagai pimpinan perusahaan dalam bidang: Asuransi, importir dan perdagangan, serta jaringan bioskop."
+    position: "Certified Coach, Motivational & Inspirational Speaker",
+    desc: "Berpengalaman sebagai pimpinan perusahaan dalam bidang: Asuransi, importir dan perdagangan, serta jaringan bioskop."
   },
   {
     image: NurAnugerahImage,
     name: "Nur Anugerah",
-    desc: "Psikolog, Certified Coach dan Founder GenerasiCakap, Ketua Yayasan Generasi Cahaya Kebaikan, Expert di bidang HR (10 tahun pengalaman) di Assessment, Learning & Development, Corporate Culture."
+    position: "Psikolog, Certified Coach dan Founder GenerasiCakap",
+    desc: "Ketua Yayasan Generasi Cahaya Kebaikan, Expert di bidang HR (10 tahun pengalaman) di Assessment, Learning & Development, Corporate Culture."
   },
   {
     image: NinienIrnawatiImage,
     name: "Ninien Irnawati",
-    desc: "Certified Coach, HR Professional, Expert di bidang HR & Recruitment (20 tahun pengalaman) di bidang Pendidikan, Tech Company, MBA Universitas Gajah Mada."
+    position: "Certified Coach, HR Professional, Expert di bidang HR & Recruitment (20 tahun pengalaman)",
+    desc: "di bidang Pendidikan, Tech Company, MBA Universitas Gajah Mada."
   },
   {
     image: PutriParamitaImage,
     name: "Putri Paramita",
-    desc: "Certified Coach spesialisasi Gratitude Coach & Personal Growth, Expert Business Analyst di bidang automotive"
+    position: "Certified Coach spesialisasi Gratitude Coach & Personal Growth",
+    desc: "Expert Business Analyst di bidang automotive"
   },
   {
     image: YasmineKristantiImage,
     name: "Yasmine Kristanti",
-    desc: "Certified Coach, Expert in Branding, Marketing & Communication (15 tahun pengalaman) di bidang advertising"
+    position: "Certified Coach, Expert in Branding, Marketing & Communication",
+    desc: "(15 tahun pengalaman) di bidang advertising"
+  },
+  {
+    image: ImeldaSumurungImage,
+    name: "Imelda Sumurung",
+    position: "Certified Self Growth Coach, Director of Manufacturing Company",
+    desc: "Certified Mind, Body & Energy Work"
+  },
+  {
+    image: JaneArdaneshawariImage,
+    name: "Jane Ardaneshawari",
+    position: "Certified Coach, Writer, Editor, Berpengalaman lebih dari 20 tahun",
+    desc: "di dunia media"
+  },
+  {
+    image: NovenaAmauriImage,
+    name: "Novena Amauri",
+    position: "Certified Coach, Senior Financial Planner, MDRT Mentor",
+    desc: ""
+  },
+  {
+    image: CiciliaPrimanitaImage,
+    name: "Cicilia Primanita",
+    position: "Certified Coach, Former BOD PGI Analytic, Former Marketing & Sales Director",
+    desc: "JV Nestle Indofood, Former VP Marketing Nestle Indonesia, Berpengalaman lebih dari 25 tahun di dunia FMCG dan SME"
   },
 ]
 
