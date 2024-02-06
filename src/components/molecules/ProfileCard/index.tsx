@@ -7,7 +7,7 @@ import { cn, muli } from "@/lib";
 interface ProfileCardProps {
   image: StaticImageData;
   name: string;
-  position: string;
+  // position: string;
   desc: string;
   className?: string;
 }
@@ -15,7 +15,7 @@ interface ProfileCardProps {
 const ProfileCard: FC<ProfileCardProps> = ({
   image,
   name,
-  position,
+  // position,
   desc,
   className,
 }) => {
@@ -49,7 +49,7 @@ const ProfileCard: FC<ProfileCardProps> = ({
       >
         {name}
       </p>
-      <p
+      {/* <p
         className={cn([
           muli.className,
           "text-neutral-900 text-center text-xs leading-gc-body-4 font-bold",
@@ -57,7 +57,7 @@ const ProfileCard: FC<ProfileCardProps> = ({
         ])}
       >
         {position}
-      </p>
+      </p> */}
       <p
         className={cn([
           muli.className,

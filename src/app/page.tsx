@@ -1117,7 +1117,7 @@ export default function Home() {
                 key={index}
                 image={item.image}
                 name={item.name}
-                position={item.position}
+                // position={item.position}
                 desc={item.desc}
               />
             );
@@ -1144,7 +1144,7 @@ export default function Home() {
             slidesPerView={1}
             spaceBetween={16}
             navigation
-            autoplay={{ delay: 2000, disableOnInteraction: false }}
+            autoplay={{ delay: 5500, disableOnInteraction: false }}
             pagination={{ enabled: true }}
             scrollbar={{ draggable: true }}
             className=""
@@ -1157,7 +1157,7 @@ export default function Home() {
                       key={index}
                       image={item.image}
                       name={item.name}
-                      position={item.position}
+                      // position={item.position}
                       desc={item.desc}
                     />
                   );
@@ -1172,7 +1172,7 @@ export default function Home() {
                       key={index}
                       image={item.image}
                       name={item.name}
-                      position={item.position}
+                      // position={item.position}
                       desc={item.desc}
                     />
                   );
@@ -1187,7 +1187,37 @@ export default function Home() {
                       key={index}
                       image={item.image}
                       name={item.name}
-                      position={item.position}
+                      // position={item.position}
+                      desc={item.desc}
+                    />
+                  );
+                })}
+              </div>
+            </SwiperSlide>
+            <SwiperSlide className="pb-10">
+              <div className="flex gap-x-6 justify-center">
+                {CoachData.slice(9, 12).map((item, index) => {
+                  return (
+                    <ProfileCard
+                      key={index}
+                      image={item.image}
+                      name={item.name}
+                      // position={item.position}
+                      desc={item.desc}
+                    />
+                  );
+                })}
+              </div>
+            </SwiperSlide>
+            <SwiperSlide className="pb-10">
+              <div className="flex gap-x-6 justify-center">
+                {CoachData.slice(12, 15).map((item, index) => {
+                  return (
+                    <ProfileCard
+                      key={index}
+                      image={item.image}
+                      name={item.name}
+                      // position={item.position}
                       desc={item.desc}
                     />
                   );

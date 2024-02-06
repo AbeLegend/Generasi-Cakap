@@ -52,7 +52,7 @@ const FAQCard: FC<FAQCardProps> = ({ question, answer, className }) => {
                   key={index}
                   className={cn([
                     mulish.className,
-                    "text-neutral-700 text-sm",
+                    "text-black text-sm",
                     answer.length > 1 && "flex gap-x-2 items-center",
                   ])}
                 >
