@@ -5,7 +5,7 @@ import { cn, muli } from "@/lib";
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   children?: ReactNode;
-  mode: "primary" | "secondary";
+  mode: "primary" | "secondary" | "custom";
 }
 
 const Button: React.FC<ButtonProps> = ({
@@ -25,6 +25,7 @@ const Button: React.FC<ButtonProps> = ({
         mode === "primary" &&
           "bg-secondary shadow-[0_0_16px_0px_rgba(254,157,7,0.5)]",
         mode === "secondary" && "bg-[#EAF4FA] text-primary font-bold",
+        mode === "custom" && "bg-primary text-neutral-100 font-bold",
         muli.className,
         className,
       ])}

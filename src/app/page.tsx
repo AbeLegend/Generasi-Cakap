@@ -469,6 +469,76 @@ export default function Home() {
           // Desktop
         ])}
       >
+        <h2
+          className={cn([
+            "text-primary font-bold text-center mb-4 uppercase mx-auto col-span-4",
+            // Mobile
+            "text-[24px]",
+            // Mobile XL
+            "mobile-xl:text-[25px] mobile-xl:max-w-[80%]",
+            // Tab
+            "tab:text-[30px] tab:max-w-[60%] tab:leading-[45px]",
+            // Tab XL
+            "tab-xl:text-[40px] tab-xl:mb-6 tab-xl:col-span-8 tab-xl:max-w-[60%] tab-xl:leading-[55px]",
+            // Laptop
+            "laptop:text-[42px] laptop:mb-6 laptop:max-w-[50%] laptop:leading-[52px]",
+            // Laptop XL
+            "laptop-xl:text-[42px] laptop-xl:mb-6 laptop-xl:max-w-[50%] laptop-xl:leading-[52px]",
+            // Desktop
+            "desktop:text-[52px] desktop:mb-6 desktop:max-w-[50%] desktop:leading-[62px]",
+          ])}
+        >
+          SEPERTI APA SERU NYA CAREER CATALYST?
+        </h2>
+        <p
+          className={cn([
+            muli.className,
+            "text-sm text-neutral-900 text-center mx-auto col-span-4",
+            // Mobile
+            "mb-[25px]",
+            // Mobile XL
+            "mobile-xl:max-w-[450px] tab:text-lg",
+            // Tab
+            "tab:max-w-[700px] tab:text-lg",
+            // Tab XL
+            "tab-xl:max-w-[750px] tab-xl:text-lg tab-xl:col-span-8",
+            // Laptop
+            "laptop:max-w-[750px] laptop:text-lg",
+            // Laptop XL
+            "laptop-xl:max-w-[750px] laptop-xl:text-lg",
+            // Desktop
+            "desktop:text-lg desktop:max-w-[750px]",
+          ])}
+        >
+          Dalam dua bulan ini di Career Catalyst, kamu bakal seru-seruan bareng
+          para mentor yang bakal bimbing kamu secara virtual.{" "}
+          <span
+            className={cn([
+              // Mobile
+              "hidden",
+              // Mobile XL
+              // Tab
+              "tab:inline",
+            ])}
+          >
+            Mereka nggak cuma bantuin kamu cari arah dan passion di karir, tapi
+            juga kasih kesempatan buat ngobrol serius dalam sesi coaching
+            1-on-1.
+          </span>
+          <span
+            className={cn([
+              // Mobile
+              "mt-2 inline-block",
+              // Mobile XL
+              // Tab
+              "tab:hidden",
+            ])}
+          >
+            Mereka nggak cuma bantuin kamu cari arah dan passion di karir, tapi
+            juga kasih kesempatan buat ngobrol serius dalam sesi coaching
+            1-on-1.
+          </span>
+        </p>
         <div
           className={cn([
             "rounded-2xl bg-[#1A1A1A] p-4 relative w-full",
@@ -1976,8 +2046,9 @@ export default function Home() {
             min. 15 pax
           </h1>
           <Button
-            mode="secondary"
+            mode="custom"
             className={cn([
+              figtree.className,
               "hidden",
               // Mobile
               // Mobile XL
@@ -2036,9 +2107,11 @@ export default function Home() {
           min. 15 pax
         </h1>
         <Button
-          mode="secondary"
+          mode="custom"
           className={cn([
             "uppercase mb-16",
+            figtree.className,
+
             // Mobile
             // Mobile XL
             // Tab
@@ -2425,7 +2498,7 @@ export default function Home() {
             // Desktop
           ])}
         >
-          Antapani Kidul, Kec. Antapani, Kota Bandung 40291asdad
+          Antapani, Kota Bandung 40291
         </p>
         <div
           className={cn([
@@ -2521,7 +2594,7 @@ export default function Home() {
               "desktop:text-xl desktop:font-semibold",
             ])}
           >
-            Antapani Kidul, Kec. Antapani, Kota Bandung 40291
+            Antapani, Kota Bandung 40291
           </p>
           <div
             className={cn([

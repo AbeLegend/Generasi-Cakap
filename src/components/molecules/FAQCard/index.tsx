@@ -52,12 +52,12 @@ const FAQCard: FC<FAQCardProps> = ({ question, answer, className }) => {
                   key={index}
                   className={cn([
                     mulish.className,
-                    "text-black text-sm",
+                    "text-neutral-900 text-sm",
                     answer.length > 1 && "flex gap-x-2 items-center",
                   ])}
                 >
                   {answer.length > 1 && (
-                    <span className="inline-block w-[5px] h-[5px] rounded-full bg-black" />
+                    <span className="inline-block w-[5px] h-[5px] rounded-full bg-neutral-900" />
                   )}
                   <span dangerouslySetInnerHTML={{ __html: item }}></span>
                 </li>
