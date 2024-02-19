@@ -87,7 +87,7 @@ const TimelineData: Array<TimelineItem> = [
     item: ["Transform Your Professional Journey with Personalized Guidance", "Personal & Professional Awareness"]
   },
   {
-    date: "19 Februari 2024",
+    date: "23 Februari 2024",
     isKickOff: true,
     isOrange: true,
     title: "KICK OFF!"
