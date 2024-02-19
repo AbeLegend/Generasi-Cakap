@@ -93,7 +93,7 @@ const TimelineData: Array<TimelineItem> = [
     title: "KICK OFF!"
   },
   {
-    date: "19 Februari 2024",
+    date: "23 Februari 2024",
     isKickOff: true,
     isOrange: false,
     title: "In-class Learning: Session #1",
